@@ -1,0 +1,411 @@
+/* ==========================================================
+   ✨ Global Variables & Base Theme
+   ========================================================== */
+:root {
+  --soft-primary: #5a67d8;
+  --soft-secondary: #8b5cf6;
+  --soft-bg-gradient: linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
+  --glow-light: rgba(90, 103, 216, 0.25);
+  --text-main: #2d3748;
+  --whatsapp-color: #25D366;
+  --whatsapp-hover: #1eb956;
+}
+
+body {
+  background: var(--soft-bg-gradient);
+  color: var(--text-main);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Helper Utilities */
+.transition-all {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.extra-small {
+  font-size: 0.78rem !important;
+}
+
+/* ==========================================================
+   🌐 Glassmorphism Navbar & Animated Glow Buttons
+   ========================================================== */
+.soft-navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Spinning Glow Gradient Border Setup */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin-glow {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+.glow-nav-btn {
+  position: relative;
+  border: none !important;
+  background: #ffffff;
+  color: #4a5568;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  z-index: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.glow-nav-btn::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from var(--angle), #0d6efd, #00f2fe, #8b5cf6, #0d6efd);
+  border-radius: 50px;
+  z-index: -2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: spin-glow 3s linear infinite;
+}
+
+.glow-nav-btn::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: #ffffff;
+  border-radius: 48px;
+  z-index: -1;
+  transition: background 0.3s ease;
+}
+
+.glow-nav-btn:hover::before,
+.glow-nav-btn.active::before {
+  opacity: 1;
+}
+
+.glow-nav-btn.active {
+  color: #0d6efd !important;
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.35);
+}
+
+.glow-nav-btn.active::after {
+  background: #f0f7ff;
+}
+
+/* Fallback Nav Item Button */
+.nav-item-btn {
+  border: none;
+  background: transparent;
+  color: #4a5568;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-item-btn:hover, 
+.nav-item-btn.active {
+  background: rgba(90, 103, 216, 0.12);
+  color: #4c51bf;
+  box-shadow: 0 0 12px rgba(90, 103, 216, 0.2);
+}
+
+/* ==========================================================
+   🎴 Cards & Interactive Glow Effects
+   ========================================================== */
+.glow-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(90, 103, 216, 0.15), 0 0 15px rgba(139, 92, 246, 0.1);
+  border-color: #cbd5e0;
+}
+
+/* Shimmer Light Sweep on Hover */
+.glow-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.glow-card:hover::before {
+  left: 100%;
+}
+
+/* Hover Top Card Variation */
+.hover-top {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-top:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Video Hover Card Styling */
+.video-hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* ==========================================================
+   ♾️ Infinite Marquee Slider Animations
+   ========================================================== */
+@keyframes clientMarquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: clientMarquee 25s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ==========================================================
+   🔘 Custom Action Buttons & Animations
+   ========================================================== */
+.btn-glow-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff !important;
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-glow-primary:hover {
+  color: #ffffff !important;
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.btn-whatsapp-green {
+  background-color: var(--whatsapp-color);
+  color: #ffffff !important;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp-green:hover {
+  background-color: var(--whatsapp-hover);
+  color: #ffffff !important;
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+/* WhatsApp Bell Ring Animation */
+@keyframes bellRing {
+  0% { transform: rotate(0); }
+  10% { transform: rotate(15deg); }
+  20% { transform: rotate(-15deg); }
+  30% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  50% { transform: rotate(5deg); }
+  60% { transform: rotate(-5deg); }
+  70% { transform: rotate(0); }
+  100% { transform: rotate(0); }
+}
+
+.bell-shake-btn {
+  animation: bellRing 5s infinite ease-in-out;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+/* ==========================================================
+   🎈 Social Icon Bar (Bubble Float & Bounce Effect)
+   ========================================================== */
+.social-net-bar {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 0;
+}
+
+.social-bubble-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff !important;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              box-shadow 0.3s ease, 
+              background-color 0.3s ease;
+}
+
+.social-bubble-btn:hover {
+  transform: translateY(-10px) scale(1.18);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.22);
+}
+
+.social-bubble-btn:active {
+  transform: translateY(-4px) scale(0.95);
+}
+
+/* Brand Background Colors */
+.bg-tiktok { 
+  background-color: #010101 !important; 
+}
+.bg-tiktok:hover {
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.4);
+}
+
+.bg-youtube { 
+  background-color: #FF0000 !important; 
+}
+.bg-youtube:hover {
+  box-shadow: 0 12px 22px rgba(255, 0, 0, 0.45);
+}
+
+.bg-facebook { 
+  background-color: #1877F2 !important; 
+}
+.bg-facebook:hover {
+  box-shadow: 0 12px 22px rgba(24, 119, 242, 0.45);
+}
+
+.bg-google { 
+  background-color: #EA4335 !important; 
+}
+.bg-google:hover {
+  box-shadow: 0 12px 22px rgba(234, 67, 53, 0.45);
+}
+
+.bg-instagram { 
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; 
+}
+.bg-instagram:hover {
+  box-shadow: 0 12px 22px rgba(220, 39, 67, 0.45);
+}
+
+.bg-twitter { 
+  background-color: #000000 !important; 
+}
+.bg-twitter:hover {
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.4);
+}
+
+/* ==========================================================
+   🦶 Footer & Contact Section
+   ========================================================== */
+.dark-contact-section {
+  background: #0f172a;
+  color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.custom-footer {
+  background-color: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.footer-contact-item {
+  transition: transform 0.25s ease;
+}
+
+.footer-contact-item:hover {
+  transform: translateX(5px);
+}
+
+.footer-contact-item:hover .footer-icon-box {
+  background: #0d6efd;
+  color: #ffffff;
+  transform: scale(1.18) rotate(12deg);
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.35);
+}
+
+.footer-quick-link {
+  transition: all 0.25s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: #4a5568;
+}
+
+.footer-quick-link:hover {
+  color: #0d6efd !important;
+  transform: translateX(6px);
+}
+
+.brand-logo-svg {
+  height: 44px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .brand-logo-svg {
+  transform: scale(1.05);
+}
