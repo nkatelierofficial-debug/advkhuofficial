@@ -2,7 +2,7 @@ import React from 'react';
 
 // Images import from assets with exact filenames
 import bannerImg from '../assets/images/penaflexprinting.jpg';
-import outdoorPrintImg from '../assets/images/newImages/IMG-20260822-WA0177.jpg';
+import outdoorPrintImg from '../assets/images/outdoorPrint.jpg';
 import backlitPanaflexImg from '../assets/images/BacklitPanaflexBoardPrinting.jpg';
 import starFlexImg from '../assets/images/StarFlexBanner.jpg';
 import xStandeeImg from '../assets/images/X-StandeePrinting.jpg';
@@ -21,71 +21,71 @@ function PanaflexPrinting() {
     {
       id: 1,
       title: "Frontlit Panaflex Printing",
-      price: "Rs 30.00 / sqft",
+      price: "Rs 120.00 / sqft",
       img: outdoorPrintImg,
       desc: "Standard heavy-duty outdoor flex printing for billboards, shop boards & event banners."
     },
     {
       id: 2,
       title: "Backlit Panaflex Board Printing",
-      price: "Rs 60.00 / sqft",
+      price: "Rs 900.00 / sqft",
       img: backlitPanaflexImg,
       desc: "High translucent flex designed for illuminated lightboxes & light boards."
     },
     {
       id: 3,
       title: "Star Flex (Heavy Duty) Banner",
-      price: "Rs 50.00 / sqft",
+      price: "Rs 180.00 / sqft",
       img: starFlexImg,
       desc: "Premium smooth finish flex with extra durability and high color contrast."
     },
     {
       id: 4,
       title: "X-Standee Printing & Frame",
-      price: "Rs 2,500.00",
+      price: "Rs 3,500.00",
       img: xStandeeImg,
       desc: "Lightweight portable X-frame with customized HD flex banner (2x5 ft / 2x6 ft)."
     },
     {
       id: 5,
       title: "Rollup Standee Banner",
-      price: "Rs 4,500.00",
+      price: "Rs 7,500.00",
       img: rollupImg,
       desc: "Retractable aluminum rollup banner stand with high quality smooth print."
     },
     {
       id: 6,
       title: "Restaurant Flex Menu Boards",
-      price: "Rs 350.00 / sqft",
+      price: "Rs 450.00 / sqft",
       img: restaurantFlexImg,
       desc: "Vibrant high-resolution menu boards & promotional banners for food outlets."
     },
     {
       id: 7,
       title: "Reflective Panaflex Printing",
-      price: "Rs 120.00 / sqft",
+      price: "Rs 300.00 / sqft",
       img: reflectivePanaflexImg,
       desc: "High visibility reflective flex sheet that glows at night when light shines on it."
     },
     {
       id: 8,
       title: "3D Acrylic & Flex Signboard",
-      price: "Rs 1,200.00 / sqft",
+      price: "Rs 2,800.00 / sqft",
       img: signage3dImg,
       desc: "3D Illuminated letters with Panaflex backdrop for modern shop fronts."
     },
     {
       id: 9,
       title: "Kiosk Stand Printing & Setup",
-      price: "Rs 8,500.00",
-      img: kioskImg, // Yahan variable match kar diya hai
+      price: "Rs 28,000.00",
+      img: kioskImg,
       desc: "Promotional kiosk tables and counters with customized branding wrap."
     },
     {
       id: 10,
       title: "Event Backdrop Flex Banner",
-      price: "Rs 45.00 / sqft",
-      img: backdropImg, // Yahan variable match kar diya hai
+      price: "Rs 750.00 / sqft",
+      img: backdropImg,
       desc: "Large format iron frame backdrop flex printing for press conferences, stages & weddings."
     }
   ];
@@ -96,7 +96,7 @@ function PanaflexPrinting() {
   };
 
   return (
-    <div className="panaflex-page py-5" style={{ background: '#0b051d', minHeight: '100vh', color: '#ffffff' }}>
+    <div className="panaflex-page pb-5" style={{ background: '#0b051d', minHeight: '100vh', color: '#ffffff' }}>
       
       {/* Custom Styles */}
       <style>{`
@@ -122,7 +122,7 @@ function PanaflexPrinting() {
           box-shadow: 0 0 15px rgba(236, 0, 140, 0.6);
           color: #ffffff;
         }
-        .banner-container, .desc-section-box {
+        .desc-section-box {
           border: 1px solid rgba(162, 0, 255, 0.3);
           border-radius: 20px;
           background: #130a2a;
@@ -140,17 +140,27 @@ function PanaflexPrinting() {
         }
       `}</style>
 
+      {/* 1. PEHLA SECTION: Full Screen Edge-to-Edge Banner Section */}
+      <section className="mb-5 position-relative">
+        <div 
+          className="w-100 position-relative overflow-hidden shadow-lg" 
+          style={{ 
+            backgroundImage: `url(${bannerImg})`,
+            backgroundSize: '100% 100%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            minHeight: '400px',
+            height: '38vw',
+            maxHeight: '600px'
+          }}
+        ></div>
+      </section>
+
       <div className="container-fluid px-4">
         
-        {/* 1. PEHLA SECTION: Main Badi Banner Image */}
-        <div className="banner-container mb-5 p-2">
-          <img 
-            src={bannerImg} 
-            alt="Panaflex Printing Main Banner" 
-            className="w-100 h-auto rounded-3 object-fit-cover" 
-          />
-        </div>
-
         {/* 2. DUSRA SECTION: Panaflex Printing Detailed Text Description & Features */}
         <div className="desc-section-box p-4 p-md-5 mb-5 text-center mx-auto" style={{ maxWidth: '1300px' }}>
           <span className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
@@ -208,9 +218,9 @@ function PanaflexPrinting() {
                   <div className="yellow-highlight fs-5 fw-bold mb-3">{item.price}</div>
                   <button
                     onClick={() => handleBuyNow(item.title, item.price)}
-                    className="btn pink-gradient-btn rounded-pill w-100 fw-semibold py-2"
+                    className="btn pink-gradient-btn rounded-pill w-100 fw-semibold py-2 d-flex align-items-center justify-content-center"
                   >
-                    <i className="bi bi-whatsapp me-2"></i> Buy Now
+                    <i className="bi bi-whatsapp me-2 fs-5"></i> Buy Now
                   </button>
                 </div>
               </div>

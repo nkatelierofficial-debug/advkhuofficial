@@ -19,49 +19,49 @@ function ExpoStallBranding() {
   const products = [
     {
       id: 1,
-      title: "Complete Stall Vinyl Branding",
+      title: "Expo Stall Vinyl Branding",
       price: "Custom Quote",
       img: stallVinylBrandingImg,
       desc: "Complete Stall Look That Attracts! Full structure wrapping for maximum exhibition impact."
     },
     {
       id: 2,
-      title: "Stall Vinyl Sticker",
+      title: "Expo Stall Vinyl Sticker",
       price: "Rs 45.00 / sqft",
       img: stallVinylStickerImg,
       desc: "High Quality Stickers for Every Surface! Perfect finish for counters and walls."
     },
     {
       id: 3,
-      title: "Big Impact Banner Printing",
+      title: " Expo Stall Banner Printing",
       price: "Rs 40.00 / sqft",
       img: stallBannerPrintingImg,
       desc: "Big Impact Banners That Speak! High-resolution heavy-duty banners for expos."
     },
     {
       id: 4,
-      title: "Stall Kiosk Stand",
+      title: "Expo Stall Kiosk Stand",
       price: "Rs 15,000.00 onwards",
       img: stallKioskStandImg,
       desc: "Perfect Kiosks, Perfect Impression! Portable counters designed for brand activation."
     },
     {
       id: 5,
-      title: "Stall X Stand",
+      title: "Expo Stall X Stand",
       price: "Rs 2,500.00 onwards",
       img: stallXStandImg,
       desc: "Lightweight. Portable. Highly Effective! Easy to setup promotional displays."
     },
     {
       id: 6,
-      title: "Stall Rollup Stand",
+      title: "Expo Stall Rollup Stand",
       price: "Rs 3,000.00 onwards",
       img: stallRollupStandImg,
       desc: "Rollup Your Brand, Rollup Your Success! Retractable stands for professional exhibition presentation."
     },
     {
       id: 7,
-      title: "Stall Backdrop & Event Branding",
+      title: "Expo Stall Backdrop ",
       price: "Rs 50.00 / sqft",
       img: stallBackdropImg,
       desc: "Stunning Backdrops for Lasting Impact! Perfect for corporate events, media walls & stages."

@@ -6,45 +6,16 @@ import missionImg from "../assets/images/ourmission.jpg";
 import satisfactionImg from "../assets/images/customersatisfication.jpg"; 
 import about3Img from "../assets/images/about3.jpg";
 
-//  Services Images Imports
-import img56 from '../assets/images/newImages/IMG-20260822-WA0056.jpg';
-import img55 from '../assets/images/newImages/IMG-20260822-WA0055.jpg';
-import img85 from '../assets/images/newImages/IMG-20260822-WA0085.jpg';
-import img95 from '../assets/images/newImages/IMG-20260822-WA0095.jpg';
-import img98 from '../assets/images/newImages/IMG-20260822-WA0098.jpg';
-import img100 from '../assets/images/newImages/IMG-20260822-WA0099.jpg'; 
-import img101 from '../assets/images/newImages/IMG-20260822-WA0101.jpg';
-import img102 from '../assets/images/newImages/IMG-20260822-WA0102.jpg';
-import img103 from '../assets/images/newImages/IMG-20260822-WA0103.jpg';
-import img104 from '../assets/images/newImages/IMG-20260822-WA0104.jpg';
-import img105 from '../assets/images/newImages/IMG-20260822-WA0106.jpg';
-import img106 from '../assets/images/newImages/IMG-20260822-WA0107.jpg';
-import img107 from '../assets/images/newImages/IMG-20260822-WA0108.jpg';
-import img108 from '../assets/images/newImages/IMG-20260822-WA0109.jpg';
-import img109 from '../assets/images/newImages/IMG-20260822-WA0110.jpg';
-import img110 from '../assets/images/newImages/IMG-20260822-WA0111.jpg';
-import img111 from '../assets/images/newImages/IMG-20260822-WA0112.jpg';
-import img112 from '../assets/images/newImages/IMG-20260822-WA0113.jpg';
-import img113 from '../assets/images/newImages/IMG-20260822-WA0115.jpg';
-import img115 from '../assets/images/newImages/IMG-20260822-WA0116.jpg';
-import img116 from '../assets/images/newImages/IMG-20260822-WA0117.jpg';
-import img117 from '../assets/images/newImages/IMG-20260822-WA0118.jpg';
-import img118 from '../assets/images/newImages/IMG-20260822-WA0119.jpg';
-import img119 from '../assets/images/newImages/IMG-20260822-WA0120.jpg';
-import img120 from '../assets/images/newImages/IMG-20260822-WA0121.jpg';
-import img121 from '../assets/images/newImages/IMG-20260822-WA0122.jpg';
-import img122 from '../assets/images/newImages/IMG-20260822-WA0123.jpg';
-import img123 from '../assets/images/newImages/IMG-20260822-WA0124.jpg';
-import img124 from '../assets/images/newImages/IMG-20260822-WA0125.jpg';
-import img125 from '../assets/images/newImages/IMG-20260822-WA0150.jpg';
-import img150 from '../assets/images/newImages/IMG-20260822-WA0151.jpg';
-import img151 from '../assets/images/newImages/IMG-20260822-WA0152.jpg';
-import img152 from '../assets/images/newImages/IMG-20260822-WA0153.jpg';
-import img153 from '../assets/images/newImages/IMG-20260822-WA0154.jpg';
-import img154 from '../assets/images/newImages/IMG-20260822-WA0155.jpg';
-import img155 from '../assets/images/newImages/IMG-20260822-WA0156.jpg';
-import img156 from '../assets/images/newImages/IMG-20260822-WA0157.jpg';
-
+// Our Services Images
+import FrontlitFlexPrintingImg from '../assets/images/FrontlitFlexPrinting.jpg';
+import BacklitFlexPrintingImg from '../assets/images/BacklitFlexPrinting.jpg';
+import StarFlexPrintingImg from '../assets/images/StarFlexPrinting.jpg';
+import ReflectiveFlexPrintingImg from '../assets/images/ReflectiveFlexPrinting.jpg';
+import XStandeesImg from '../assets/images/XStandees.jpg';
+import RollupStandeesImg from '../assets/images/RollupStandees.jpg';
+import KioskPromotionalCountersImg from '../assets/images/KioskPromotionalCounters.jpg';
+import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
+import EventBackdropsImg from '../assets/images/EventBackdrops.jpg';
 
 // Portfolio & Works Images Imports
 import PanaflexOutdoorPrinting from '../assets/images/PanaflexOutdoorPrinting.jpg';
@@ -83,7 +54,6 @@ import vid53 from '../assets/videos/VID-20260817-WA0053.mp4';
 import vid54 from '../assets/videos/VID-20260817-WA0054.mp4';
 import vid55 from '../assets/videos/VID-20260817-WA0055.mp4';
 
-
 const VideoCard = ({ videoSrc, poster, title }) => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -104,7 +74,7 @@ const VideoCard = ({ videoSrc, poster, title }) => {
 
   return (
     <div 
-      className="video-hover-card rounded-4 overflow-hidden position-relative shadow-sm"
+      className="video-hover-card rounded-4 overflow-hidden position-relative shadow-sm glow-card"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{ cursor: 'pointer', height: '220px', background: '#130a24', border: '1px solid rgba(184, 0, 255, 0.3)' }}
@@ -126,7 +96,7 @@ const VideoCard = ({ videoSrc, poster, title }) => {
         </div>
       </div>
       {title && (
-        <div className="position-absolute bottom-0 start-0 w-100 p-2 text-white text-center small" style={{ background: 'rgba(19, 10, 36, 0.9)' }}>
+        <div className="position-absolute bottom-0 start-0 w-100 p-2 text-white text-center small" style={{ background: 'rgba(19, 10, 36, 0.9)', borderTop: '1px solid rgba(184, 0, 255, 0.2)' }}>
           {title}
         </div>
       )}
@@ -136,13 +106,13 @@ const VideoCard = ({ videoSrc, poster, title }) => {
 
 function About() {
   const clientLogos = [
-    { name: "PSO Official", logo: PSO },
+    { name: "Pakistan State Oil (PSO)", logo: PSO },
     { name: "SLM Tires", logo: SLM },
     { name: "Sanam Marvee", logo: SanamMarvee },
-    { name: "Bank Partner", logo: Bank },
+    { name: "HBL / Allied Bank", logo: Bank },
     { name: "Sec. of Defence", logo: SecofDefence },
     { name: "UBL Pakistan", logo: UBLPakistan },
-    { name: "Ghazali Model", logo: GhazaliModel },
+    { name: "Ghazali Model School", logo: GhazaliModel },
     { name: "IDEAS 2024", logo: IDEAS2024 },
   ];
 
@@ -159,74 +129,82 @@ function About() {
   ];
 
   const ourServicesList = [
-    { title: "Complete Printing Solution & Banners", img: img56 },
-    { title: "Urgent Printing & Canvas Highlights", img: img55 },
-    { title: "Store Setup & Canvas Display", img: img85 },
-    { title: "Panaflex & 1 Hour Delivery Experts", img: img95 },
-    { title: "Premium Services & Rollup Display", img: img98 },
-    { title: "24/7 Printing & Visiting Cards Showcase", img: img100 },
-    { title: "Expo Stall & Stand Branding", img: img101 },
-    { title: "Panaflex & 3D Wall Graphics", img: img102 },
-    { title: "Panaflex & 1 Hour Delivery Experts", img: img103 },              
-    { title: "Complete Printing Solution & Banners", img: img105 },       
-    { title: "Event Display Solutions & Standee Branding", img: img106 },   
-    { title: "Expo Stall & Exhibition Setup", img: img107 },    
-    { title: "X-Stands & Rollup Banners Pricing", img: img108 },    
-    { title: "Printing Experts & 1 Hour Urgent Service", img: img109 },
-    { title: "Premium Printing & Fast Outdoor Billboards", img: img110 },             
-    { title: "Complete Printing Solutions & Flex Banners", img: img111 },           
-    { title: "In-Store Branding (Danglers, Buntings & Wobblers", img: img112 },        
-    { title: "X-Stands & Rollup Stands Promotional Pricing", img: img113 },       
-    { title: "Large Format Printing (Panaflex, Vinyl & Canvas)", img: img115 },     
-    { title: "Visiting Cards, Brochures & Paper Bags", img: img116 },        
-    { title: "Outdoor Signboards & Storefront Branding", img: img117 },        
-    { title: "Office Showroom & Printing Facility Gallery", img: img118 },          
-    { title: "Canvas Printing & Wall Art Displays", img: img119 },        
-    { title: "X-Stand & Rollup Banner Printing", img: img120 },         
-    { title: "Panaflex Printing & Quick WhatsApp Orders", img: img121 },             
-    { title: "Kiosk Stand Printing & Promotional Counters", img: img122 },           
-    { title: "Panaflex 3D Wallpaper Printing", img: img123 },            
-    { title: "Roll Up Stand Printing & Displays", img: img124 },     
-    { title: "UV DTF Stickers & Customized Product Printing", img: img125 },         
-    { title: "Panaflex Printing & Business Services", img: img150 },       
-    { title: "Digital Panaflex & Flex Printing Services", img: img151 },        
-    { title: "Interior Wallpaper & Panaflex Printing", img: img152 },         
-    { title: "Digital Flex & Panaflex Printing", img: img153 },      
-    { title: "DTF UV Printer & Company Tags Printing", img: img154 }, 
-    { title: "Complete Advertising & Branding Printing Services", img: img155 },           
-    { title: "Digital Printing, Fabrication & Signage Services", img: img156 },        
-                 
+    {
+      title: "Frontlit Flex Printing",
+      desc: "Standard outdoor flex printing for billboards, shop boards & event banners.",
+      img: FrontlitFlexPrintingImg
+    },
+    {
+      title: "Backlit Flex Printing",
+      desc: "High translucent flex designed for backlit lightboxes & glowing signboards.",
+      img: BacklitFlexPrintingImg
+    },
+    {
+      title: "Star Flex Printing",
+      desc: "Premium smooth finish flex with extra durability and vibrant contrast.",
+      img: StarFlexPrintingImg
+    },
+    {
+      title: "Reflective Flex Printing",
+      desc: "High-visibility reflective sheet that glows at night when light shines on it.",
+      img: ReflectiveFlexPrintingImg
+    },
+    {
+      title: "X-Standees",
+      desc: "Lightweight and portable X-frame standees with customized flex banners.",
+      img: XStandeesImg
+    },
+    {
+      title: "Rollup Standees",
+      desc: "Retractable aluminum base rollup standees for quick indoor display setups.",
+      img: RollupStandeesImg
+    },
+    {
+      title: "Kiosk & Promotional Counters",
+      desc: "Custom branded display counters and promotional tables for marketing.",
+      img: KioskPromotionalCountersImg
+    },
+    {
+      title: "3D Acrylic & LED Signboards",
+      desc: "3D illuminated acrylic letters combined with sleek flex backdrops.",
+      img: Acrylic3DSignboardsImg
+    },
+    {
+      title: "Event Backdrops",
+      desc: "Large-format iron frame backdrop setups for stages, weddings, and corporate events.",
+      img: EventBackdropsImg
+    }
   ];
 
   const videosList = [
-    { id: 1, src: bannerLivePrint, poster: PanaflexOutdoorPrinting, title: "Banner Live Print" },
-    { id: 2, src: rollupPrinting, poster: OffsetPackagePrinting, title: "Rollup Printing" },
-    { id: 3, src: vid12, poster: ExhibitionStallBranding, title: "Production Work 01" },
-    { id: 4, src: vid42, poster: organicDatePackaging, title: "Production Work 02" },
-    { id: 5, src: vid43, poster: customDiecutLabels, title: "Production Work 03" },
-    { id: 6, src: vid44, poster: modernPetSignage, title: "Production Work 04" },
-    { id: 7, src: vid46, poster: businessQRCards, title: "Production Work 05" },
-    { id: 8, src: vid47, poster: charcoalBoxPackaging, title: "Production Work 06" },
-    { id: 10, src: vid49, poster: PanaflexOutdoorPrinting, title: "Production Work 08" },
-    { id: 11, src: vid50, poster: OffsetPackagePrinting, title: "Production Work 09" },
-    { id: 13, src: vid52, poster: organicDatePackaging, title: "Production Work 11" },
-    { id: 14, src: vid53, poster: customDiecutLabels, title: "Production Work 12" },
-    { id: 15, src: vid54, poster: modernPetSignage, title: "Production Work 13" },
-    { id: 16, src: vid55, poster: businessQRCards, title: "Production Work 14" },
+    { id: 1, src: bannerLivePrint  },
+    { id: 2, src: rollupPrinting },
+    { id: 3, src: vid12 },
+    { id: 4, src: vid42 },
+    { id: 5, src: vid43  },
+    { id: 6, src: vid44 },
+    { id: 7, src: vid46 },
+    { id: 8, src: vid47 },
+    { id: 10, src: vid49 },
+    { id: 11, src: vid50 },
+    { id: 13, src: vid52 },
+    { id: 14, src: vid53 },
+    { id: 15, src: vid54 },
+    { id: 16, src: vid55 },
   ];
 
-  const testimonials = [
-    { name: "Sarah K.", role: "Retail Store Owner", rating: 5, comment: "The Panaflex signage we ordered for our store exceeded all our expectations. The colors pop, and it's so durable. Highly recommend their services!" },
-    { name: "Ahmed R.", role: "Event Organizer", rating: 5, comment: "The Panaflex banner we got for our event was exactly what we needed. Great design, quick delivery, and very affordable. Definitely worth it!" },
-    { name: "John D.", role: "Business Owner", rating: 5, comment: "I was really impressed by the quality of the Panaflex material used. The design was sleek and professional. Definitely my go-to company for future signage needs!" },
-    { name: "Zaid Hassan", role: "Marketing Manager", rating: 5, comment: "Exceptional printing quality for our corporate rollup standees. Delivered right on schedule in Karachi." },
-    { name: "Saima Ali", role: "Bakery Owner", rating: 5, comment: "Custom packaging boxes turned out incredible! High resolution print and clean finishing." },
-    { name: "Farhan Raza", role: "Restaurant Owner", rating: 5, comment: "Backlight board installation was done very professionally. Bright colors and excellent durability." },
-    { name: "Maryam Khan", role: "Graphic Designer", rating: 5, comment: "Business card lamination and corner cutting quality was spot-on. Highly recommended service." },
-    { name: "Usman Ghani", role: "E-Commerce Brand Owner", rating: 5, comment: "Best rates for Panaflex printing. Prompt WhatsApp support and fast dispatch!" },
-    { name: "Bilal Tariq", role: "Corporate Client", rating: 5, comment: "Superb acrylic printing and promotional items. The attention to detail in design and final finish was impressive!" },
-    { name: "Hamza Sheikh", role: "Real Estate Developer", rating: 5, comment: "Outstanding large-format outdoor billboards! The durability and color retention in harsh weather is remarkable." }
-  ];
+ const testimonials = [
+  { name: "Muhammad Ahsan", role: "Retail Store Owner", rating: 5, comment: "The Panaflex signage we ordered for our store exceeded all our expectations. The colors pop, and it's so durable. Highly recommend their services!" },
+  { name: "Ayesha Khan", role: "Event Organizer", rating: 5, comment: "The Panaflex banner we got for our event was exactly what we needed. Great design, quick delivery, and very affordable. Definitely worth it!" },
+  { name: "Tariq Mahmood", role: "Business Owner", rating: 5, comment: "I was really impressed by the quality of the Panaflex material used. The design was sleek and professional. Definitely my go-to company for future signage needs!" },
+  { name: "Zubair Siddiqui", role: "Marketing Manager", rating: 5, comment: "Exceptional printing quality for our corporate rollup standees. Delivered right on schedule in Karachi." },
+  { name: "Fatima Noor", role: "Bakery Owner", rating: 5, comment: "Custom packaging boxes turned out incredible! High resolution print and clean finishing." },
+  { name: "Usman Ghani", role: "Restaurant Owner", rating: 5, comment: "Backlight board installation was done very professionally. Bright colors and excellent durability." },
+  { name: "Bilal Ahmed", role: "Graphic Designer", rating: 5, comment: "Business card lamination and corner cutting quality was spot-on. Highly recommended service." },
+  { name: "Sana Raza", role: "E-Commerce Brand Owner", rating: 5, comment: "Best rates for Panaflex printing. Prompt WhatsApp support and fast dispatch!" },
+  { name: "Kamran Shah", role: "Corporate Client", rating: 5, comment: "Superb acrylic printing and promotional items. The attention to detail in design and final finish was impressive!" },
+  { name: "Hamza Malik", role: "Real Estate Developer", rating: 5, comment: "Outstanding large-format outdoor billboards! The durability and color retention in harsh weather is remarkable." }
+];
 
   return (
     <div className="about-page pb-5" style={{ background: '#090514', color: '#f8fafc', minHeight: '100vh' }}>
@@ -282,141 +260,230 @@ function About() {
 
         .glow-card {
           background: linear-gradient(145deg, #130a24, #1a0f35);
-          border-radius: 16px;
-          border: 1px solid rgba(184, 0, 255, 0.25);
-          transition: transform 0.35s ease, box-shadow 0.35s ease;
+          border-radius: 20px;
+          border: 1px solid rgba(184, 0, 255, 0.3);
+          transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
           position: relative;
           overflow: hidden;
           color: #f1f5f9;
         }
 
         .glow-card:hover {
-          transform: translateY(-6px);
-          box-shadow: 0 15px 35px rgba(184, 0, 255, 0.4) !important;
+          transform: translateY(-8px);
+          box-shadow: 0 15px 35px rgba(184, 0, 255, 0.45) !important;
           border-color: #ff2a85;
+        }
+
+        .btn-buy-now {
+          background: linear-gradient(90deg, #d900c7, #ff007f);
+          color: #fff !important;
+          font-weight: 700;
+          border: none;
+          border-radius: 50px;
+          padding: 12px 20px;
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          box-shadow: 0 4px 15px rgba(217, 0, 199, 0.4);
+        }
+        .btn-buy-now:hover {
+          transform: scale(1.03);
+          box-shadow: 0 6px 20px rgba(255, 0, 127, 0.6);
+          color: #fff;
         }
       `}</style>
 
-      <div className="container py-4">
+      {/* 1. Full Screen Edge-to-Edge Banner Section */}
+      <section className="mb-5 position-relative">
+        <div 
+          className="w-100 position-relative overflow-hidden shadow-lg" 
+          style={{ 
+            backgroundImage: `url(${aboutBannerImg})`,
+            backgroundSize: '100% 100%',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            width: '100vw',
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            minHeight: '400px',
+            height: '38vw',
+            maxHeight: '600px'
+          }}
+        ></div>
+      </section>
 
-        {/* 1. Hero Section */}
-        <section className="mb-5">
-          <div className="rounded-4 overflow-hidden shadow-lg mb-4 border" style={{ borderColor: 'rgba(184, 0, 255, 0.4)', maxHeight: '400px' }}>
-            <img 
-              src={aboutBannerImg} 
-              alt="About Banner" 
-              className="w-100 h-100 object-fit-cover" 
-            />
+      <div className="container py-2">
+        {/* Main Brand Hero Card */}
+        <div className="glow-card text-center p-4 p-md-5 shadow-lg mb-5">
+          <h2 className="fst-italic fw-normal mb-2" style={{ color: '#ffcc00' }}>If you can Dream it, We can Print it.</h2>
+          <h1 className="display-4 fw-bold mb-4" style={{ fontFamily: 'Lobster Two, cursive', color: '#ffffff' }}>Khurram Advertising</h1>
+
+          <div className="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="https://wa.me/923212102553" target="_blank" rel="noreferrer" className="btn btn-whatsapp-green rounded-pill px-4 py-2 text-decoration-none shadow-sm">
+              <i className="bi bi-whatsapp me-2 fs-5"></i> +92 3212102553
+            </a>
+            <a href="https://wa.me/923347779297" target="_blank" rel="noreferrer" className="btn btn-whatsapp-green rounded-pill px-4 py-2 text-decoration-none shadow-sm">
+              <i className="bi bi-whatsapp me-2 fs-5"></i> +92 3347779297
+            </a>
           </div>
+        </div>
 
-          <div className="glow-card text-center p-4 p-md-5 shadow-lg">
-            <h2 className="fst-italic fw-normal mb-2" style={{ color: '#ffcc00' }}>If you can Dream it, We can Print it.</h2>
-            <h1 className="display-4 fw-bold mb-4" style={{ fontFamily: 'Lobster Two, cursive', color: '#ffffff' }}>Khurram Advertising</h1>
-
-            <div className="d-flex justify-content-center gap-3 flex-wrap">
-              <a href="https://wa.me/923212102553" target="_blank" rel="noreferrer" className="btn btn-whatsapp-green rounded-pill px-4 py-2 text-decoration-none shadow-sm">
-                <i className="bi bi-whatsapp me-2 fs-5"></i> +92 3212102553
-              </a>
-              <a href="https://wa.me/923347779297" target="_blank" rel="noreferrer" className="btn btn-whatsapp-green rounded-pill px-4 py-2 text-decoration-none shadow-sm">
-                <i className="bi bi-whatsapp me-2 fs-5"></i> +92 3347779297
-              </a>
-            </div>
+        {/* About Us Section */}
+        <section className="mb-5">
+          <div className="hashmi-custom-banner">
+            About Us
+          </div>
+          <div className="glow-card p-4 p-md-5 rounded-4 shadow-sm">
+            <p className="lh-lg fs-5 text-center" style={{ color: '#cbd5e1' }}>
+              Since 1999, Printing Press by KHURRAM ADVERTISING has been a leading creative powerhouse, offering an array of high-quality printing services in Karachi. From sleek business cards to eye-catching posters and brochures, their expert team brings your design visions to life using state-of-the-art technology. Whether it's an elegant invitation for a special occasion or a comprehensive catalog for your business, they deliver exceptional results every time. With graphic design expertise and event management services at their disposal, Printing Press by KHURRAM ADVERTISING is your one-stop destination for elevating your brand's visual identity.
+            </p>
           </div>
         </section>
 
         {/* 2. Our Mission Section */}
-        <section className="row align-items-center g-4 mb-5">
-          <div className="col-md-6">
-            <h3 className="fw-bold mb-3" style={{ color: '#ffcc00', fontFamily: 'Lobster Two, cursive', fontSize: '2.2rem' }}>Our Mission</h3>
-            <p className="text-secondary lh-lg fs-6" style={{ color: '#cbd5e1 !important' }}>
-              At <strong className="text-white">Khurram Advertising</strong>, our mission is to provide top-notch
-              printing solutions that help businesses stand out. We specialize in
-              delivering high-quality banners, panaflex signage, and promotional
-              materials with precision, speed, and creative design. Our goal is to meet
-              tight deadlines while maintaining exceptional quality to ensure your brand
-              makes a lasting impression.
-            </p>
-          </div>
-          <div className="col-md-6">
-            <div className="rounded-4 overflow-hidden shadow-sm border border-secondary" style={{ borderColor: 'rgba(184, 0, 255, 0.4) !important' }}>
-              <img 
-                src={missionImg} 
-                alt="Our Mission" 
-                className="img-fluid w-100 object-fit-cover"
-                style={{ maxHeight: '350px' }}
-              />
+        <section className="mb-5">
+          <div className="glow-card p-4 p-md-5">
+            <div className="row align-items-center g-4">
+              <div className="col-md-6">
+                <h3 className="fw-bold mb-3" style={{ color: '#ffcc00', fontFamily: 'Lobster Two, cursive', fontSize: '2.2rem' }}>Our Mission</h3>
+                <p className="lh-lg fs-6" style={{ color: '#cbd5e1' }}>
+                  At <strong className="text-white">Khurram Advertising</strong>, our mission is to provide top-notch
+                  printing solutions that help businesses stand out. We specialize in
+                  delivering high-quality banners, panaflex signage, and promotional
+                  materials with precision, speed, and creative design. Our goal is to meet
+                  tight deadlines while maintaining exceptional quality to ensure your brand
+                  makes a lasting impression.
+                </p>
+              </div>
+              <div className="col-md-6">
+                <div className="rounded-4 overflow-hidden shadow-sm border" style={{ borderColor: 'rgba(184, 0, 255, 0.4)' }}>
+                  <img 
+                    src={missionImg} 
+                    alt="Our Mission" 
+                    className="img-fluid w-100 object-fit-cover"
+                    style={{ maxHeight: '350px' }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* 3. Our Commitment to Quality Section */}
-        <section className="row align-items-center g-4 mb-5 flex-md-row-reverse">
-          <div className="col-md-6">
-            <h3 className="fw-bold mb-3" style={{ color: '#ffcc00', fontFamily: 'Lobster Two, cursive', fontSize: '2.2rem' }}>Our Commitment to Quality and Customer Satisfaction</h3>
-            <p className="text-secondary lh-lg fs-6" style={{ color: '#cbd5e1 !important' }}>
-              Our approach is simple: we focus on delivering value through superior
-              products, exceptional customer service, and on-time delivery. Every sign
-              we create is a testament to our dedication to craftsmanship and customer
-              satisfaction.
-            </p>
-          </div>
-          <div className="col-md-6">
-            <div className="rounded-4 overflow-hidden shadow-sm border border-secondary" style={{ borderColor: 'rgba(184, 0, 255, 0.4) !important' }}>
-              <img 
-                src={satisfactionImg} 
-                alt="Customer Satisfaction" 
-                className="img-fluid w-100 object-fit-cover"
-                style={{ maxHeight: '350px' }}
-              />
+        <section className="mb-5">
+          <div className="glow-card p-4 p-md-5">
+            <div className="row align-items-center g-4 flex-md-row-reverse">
+              <div className="col-md-6">
+                <h3 className="fw-bold mb-3" style={{ color: '#ffcc00', fontFamily: 'Lobster Two, cursive', fontSize: '2.2rem' }}>Our Commitment to Quality</h3>
+                <p className="lh-lg fs-6" style={{ color: '#cbd5e1' }}>
+                  Our approach is simple: we focus on delivering value through superior
+                  products, exceptional customer service, and on-time delivery. Every sign
+                  we create is a testament to our dedication to craftsmanship and customer
+                  satisfaction.
+                </p>
+              </div>
+              <div className="col-md-6">
+                <div className="rounded-4 overflow-hidden shadow-sm border" style={{ borderColor: 'rgba(184, 0, 255, 0.4)' }}>
+                  <img 
+                    src={satisfactionImg} 
+                    alt="Customer Satisfaction" 
+                    className="img-fluid w-100 object-fit-cover"
+                    style={{ maxHeight: '350px' }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* 4. Expertise & Bullet Points Section */}
-        <section className="row align-items-stretch g-4 mb-5">
-          <div className="col-md-6 d-flex flex-column justify-content-center">
-            <p className="text-secondary lh-lg mb-3" style={{ color: '#cbd5e1 !important' }}>
-              We are dedicated to excellence at every step, from concept to
-              completion. With years of expertise in the Panaflex industry, we deliver
-              high-quality, durable, and innovative solutions that go beyond our
-              clients' expectations.
-            </p>
-            <ul className="text-secondary lh-lg mb-3 ps-3" style={{ color: '#cbd5e1 !important' }}>
-              <li className="mb-2">We use the best Panaflex materials to ensure long-lasting and vibrant displays that withstand the test of time.</li>
-              <li className="mb-2">Our team works closely with clients to craft customized designs that capture attention and deliver the right message.</li>
-              <li className="mb-2">We prioritize customer satisfaction by offering timely, professional, and reliable service at every step of the process.</li>
-            </ul>
-            <p className="fw-semibold text-white">
-              We are more than just a sign company; we are your trusted partner in
-              creating impactful, eye-catching displays that leave a lasting impression.
-            </p>
-          </div>
-          <div className="col-md-6 d-flex align-items-center">
-            <div className="rounded-4 overflow-hidden shadow-sm border border-secondary w-100 p-2 d-flex align-items-center justify-content-center" style={{ borderColor: 'rgba(184, 0, 255, 0.4) !important', background: '#130a24' }}>
-              <img 
-                src={about3Img} 
-                alt="About Us Details" 
-                className="img-fluid w-100 h-auto rounded"
-                style={{ objectFit: 'contain', maxHeight: '500px' }}
-              />
+        <section className="mb-5">
+          <div className="glow-card p-4 p-md-5">
+            <div className="row align-items-stretch g-4">
+              <div className="col-md-6 d-flex flex-column justify-content-center">
+                <p className="lh-lg mb-3" style={{ color: '#cbd5e1' }}>
+                  We are dedicated to excellence at every step, from concept to
+                  completion. With years of expertise in the Panaflex industry, we deliver
+                  high-quality, durable, and innovative solutions that go beyond our
+                  clients' expectations.
+                </p>
+                <ul className="lh-lg mb-3 ps-3" style={{ color: '#cbd5e1' }}>
+                  <li className="mb-2">We use the best Panaflex materials to ensure long-lasting and vibrant displays that withstand the test of time.</li>
+                  <li className="mb-2">Our team works closely with clients to craft customized designs that capture attention and deliver the right message.</li>
+                  <li className="mb-2">We prioritize customer satisfaction by offering timely, professional, and reliable service at every step of the process.</li>
+                </ul>
+                <p className="fw-semibold text-white">
+                  We are more than just a sign company; we are your trusted partner in
+                  creating impactful, eye-catching displays that leave a lasting impression.
+                </p>
+              </div>
+              <div className="col-md-6 d-flex align-items-center">
+                <div className="rounded-4 overflow-hidden shadow-sm border w-100 p-2 d-flex align-items-center justify-content-center" style={{ borderColor: 'rgba(184, 0, 255, 0.4)', background: '#130a24' }}>
+                  <img 
+                    src={about3Img} 
+                    alt="About Us Details" 
+                    className="img-fluid w-100 h-auto rounded"
+                    style={{ objectFit: 'contain', maxHeight: '500px' }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* OUR SERVICES SECTION */}
+        {/* OUR SERVICES SECTION (Flex Printing & Branding Solutions) */}
         <section className="mb-5">
           <div className="hashmi-custom-banner">
-            Our Services
+            Flex Printing & Branding Solutions
           </div>
           <div className="glow-card p-4 rounded-4 shadow-sm border">
-            <div className="row g-4">
+            <div className="row g-4 justify-content-center">
               {ourServicesList.map((service, idx) => (
-                <div className="col-md-4 col-sm-6" key={idx}>
-                  <div className="glow-card h-100 p-3 text-center d-flex flex-column justify-content-between" style={{ background: '#1c1033' }}>
-                    <div className="overflow-hidden rounded d-flex align-items-center justify-content-center bg-black bg-opacity-25 p-2" style={{ height: '240px' }}>
-                      <img src={service.img} alt={service.title} className="w-100 h-100" style={{ objectFit: 'contain' }} />
+                <div className="col-lg-4 col-md-6 col-sm-12" key={idx}>
+                  <div 
+                    className="glow-card p-3 h-100 d-flex flex-column justify-content-between text-center"
+                    style={{ background: '#130a24', border: '1px solid rgba(184, 0, 255, 0.35)', borderRadius: '20px' }}
+                  >
+                    <div>
+                      {/* Image Frame styled matching the reference image */}
+                      <div 
+                        className="overflow-hidden rounded-4 mb-3 p-2 bg-white d-flex align-items-center justify-content-center shadow-inner" 
+                        style={{ height: '260px' }}
+                      >
+                        <img 
+                          src={service.img} 
+                          alt={service.title} 
+                          className="w-100 h-100" 
+                          style={{ objectFit: 'contain' }} 
+                        />
+                      </div>
+                      
+                      {/* Title */}
+                       <h6 className="fw-bold fs-5 my-2" style={{ color: '#ffcc00' }}>
+                        {service.title}
+                      </h6>
+                      
+                      {/* Description */}
+                      <p className="small mb-2" style={{ color: '#a0aec0', fontSize: '0.85rem' }}>
+                        {service.desc}
+                      </p>
                     </div>
-                    <h6 className="fw-semibold mt-3 mb-0 text-white">{service.title}</h6>
+
+                    <div>
+                     
+
+                      {/* Buy Now Gradient Button */}
+                      <a 
+                        href="https://wa.me/923212102553" 
+                        target="_blank" 
+                        rel="noreferrer" 
+                        className="btn-buy-now w-100 text-decoration-none mt-2"
+                      >
+                        <i className="bi bi-whatsapp fs-5"></i> Buy Now
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -444,7 +511,7 @@ function About() {
                         className="w-100 h-100 rounded-circle object-fit-cover" 
                       />
                     </div>
-                    <span className="fw-bold text-white text-center d-block" style={{ maxWidth: '150px', fontSize: '15px' }}>
+                    <span className="fw-bold text-light text-center d-block" style={{ maxWidth: '150px', fontSize: '15px' }}>
                       {client.name}
                     </span>
                   </div>
@@ -463,7 +530,7 @@ function About() {
             <div className="row g-4">
               {portfolioWorks.map((work, idx) => (
                 <div className="col-md-4 col-sm-6" key={idx}>
-                  <div className="glow-card h-100 p-2 text-center" style={{ background: '#1c1033' }}>
+                  <div className="glow-card h-100 p-2 text-center" style={{ background: '#1c1033', border: '1px solid rgba(184, 0, 255, 0.3)' }}>
                     <div className="overflow-hidden rounded" style={{ height: '200px' }}>
                       <img src={work.img} alt={work.title} className="w-100 h-100 object-fit-cover" />
                     </div>
@@ -493,34 +560,31 @@ function About() {
 
         {/* 8. What Our Clients Say Section */}
         <section className="mb-5">
-          <div className="glow-card border-0 shadow-sm rounded-4 overflow-hidden">
-            <div className="hashmi-custom-banner mb-0">
-              What Our Clients Say
-            </div>
+          <div className="hashmi-custom-banner">
+            What Our Clients Say
+          </div>
+          <div className="glow-card p-4 p-md-5 rounded-4 shadow-sm border">
+            <div className="row g-4 justify-content-center">
+              {testimonials.map((review, idx) => (
+                <div className="col-12 col-md-6 col-lg-4" key={idx}>
+                  <div className="glow-card rounded-4 p-4 h-100 d-flex flex-column text-center shadow-sm" style={{ background: '#1c1033', border: '1px solid rgba(184, 0, 255, 0.3)' }}>
+                    <div className="text-warning mb-3 fs-5">
+                      {[...Array(review.rating)].map((_, i) => (
+                        <i key={i} className="bi bi-star-fill mx-1"></i>
+                      ))}
+                    </div>
 
-            <div className="p-4 p-md-5" style={{ background: '#090514' }}>
-              <div className="row g-4 justify-content-center">
-                {testimonials.map((review, idx) => (
-                  <div className="col-12 col-md-6 col-lg-4" key={idx}>
-                    <div className="glow-card rounded-4 p-4 h-100 d-flex flex-column text-center shadow-sm" style={{ background: '#130a24' }}>
-                      <div className="text-warning mb-3 fs-5">
-                        {[...Array(review.rating)].map((_, i) => (
-                          <i key={i} className="bi bi-star-fill mx-1"></i>
-                        ))}
-                      </div>
+                    <p className="small fst-italic mb-4 lh-base" style={{ color: '#cbd5e1' }}>
+                      "{review.comment}"
+                    </p>
 
-                      <p className="small fst-italic mb-4 lh-base" style={{ color: '#cbd5e1' }}>
-                        "{review.comment}"
-                      </p>
-
-                      <div className="mt-auto">
-                        <h6 className="fw-bold mb-1 text-white">{review.name}</h6>
-                        <span className="text-muted small d-block">{review.role}</span>
-                      </div>
+                    <div className="mt-auto">
+                      <h6 className="fw-bold mb-1 text-white">{review.name}</h6>
+                      <span className="text-muted small d-block">{review.role}</span>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>

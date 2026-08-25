@@ -3,7 +3,7 @@ import React from 'react';
 // Main Banner Image import with exact path
 import bannerImg from '../assets/images/vinylprint.jpg';
 
-// Products ke liye images imports (Aap inke naam apne folder ke mutabiq adjust kar sakti hain)
+// Products ke liye images imports 
 import canvasprintsImg from '../assets/images/canvasprints.jpg';
 import vinylstickerImg from '../assets/images/vinylsticker.jpg';
 import onewayvisionImg from '../assets/images/onewayvision.jpg';
@@ -11,7 +11,6 @@ import outdoorvinylImg from '../assets/images/outdoorvinyl.jpg';
 import rollupstandImg from '../assets/images/rollupstand.jpg';
 import polestreetImg from '../assets/images/polestreet.jpg';
 import vehiclebrandingImg from '../assets/images/vehiclebranding.jpg';
-import wallpaper3dImg from '../assets/images/wallpaper3d.jpg';
 import backdropeventImg from '../assets/images/backdropevent.jpg';
 
 function VinylPrinting() {
@@ -22,62 +21,55 @@ function VinylPrinting() {
     {
       id: 1,
       title: "Canvas Prints",
-      price: "Rs 350.00 / sqft",
+      price: "Rs 600.00 / sqft",
       img: canvasprintsImg,
       desc: "Stunning Canvas Prints for Home, Office & Decor with premium fine-art texture."
     },
     {
       id: 2,
       title: "Vinyl Sticker Printing",
-      price: "Rs 45.00 / sqft",
+      price: "Rs 300.00 / sqft",
       img: vinylstickerImg,
       desc: "High Quality Stickers for Branding, Promotion & Personal Use."
     },
     {
       id: 3,
-      title: "One Way Vision Sticker",
-      price: "Rs 70.00 / sqft",
+      title: "One Way vinyl Vision Sticker",
+      price: "Rs 300.00 / sqft",
       img: onewayvisionImg,
       desc: "Perfect for Windows, Vehicles & Glass Branding (See more from outside, privacy inside)."
     },
     {
       id: 4,
-      title: "Outdoor Vinyl Banners",
-      price: "Rs 40.00 / sqft",
+      title: "Outdoor Vinyl Sticker ",
+      price: "Rs 110.00 / sqft",
       img: outdoorvinylImg,
       desc: "Weatherproof Banners for Maximum Visibility and long-lasting outdoor advertising."
     },
     {
       id: 5,
-      title: "Roll Up & X Stand",
+      title: "vinyl sticker expo stall branding",
       price: "Rs 2,500.00 onwards",
       img: rollupstandImg,
       desc: "Portable, Lightweight & Perfect for Events & Exhibitions."
     },
     {
       id: 6,
-      title: "Pole & Street Banners",
+      title: " vinyl Pole & Street Banners",
       price: "Rs 60.00 / sqft",
       img: polestreetImg,
       desc: "High Visibility Maximum Exposure street marketing and lamp-post branding."
     },
     {
       id: 7,
-      title: "Vehicle Branding",
+      title: " vinyl sticker Car Branding",
       price: "Rs 120.00 / sqft",
       img: vehiclebrandingImg,
       desc: "Transform Your Vehicle into a Moving Billboard with cast wrap vinyl."
     },
     {
-      id: 8,
-      title: "Wallpaper & 3D Wall",
-      price: "Rs 150.00 / sqft",
-      img: wallpaper3dImg,
-      desc: "3D Wallpaper & Wall Murals for Stunning Spaces and interior styling."
-    },
-    {
       id: 9,
-      title: "Backdrop & Event Branding",
+      title: " vinyl sticker wall Branding",
       price: "Rs 50.00 / sqft",
       img: backdropeventImg,
       desc: "Perfect Backdrops for Corporate Events, Press Conferences & Weddings."

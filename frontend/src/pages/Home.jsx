@@ -1,39 +1,38 @@
 import React, { useState, useEffect } from 'react';
 
-// 1. Hero Banner 
+// 1. Hero Banner
 import imgHero1 from '../assets/images/homebanner.jpg';
-import imgHero2 from '../assets/images/aboutbanner.jpg';
 import imgHero3 from '../assets/images/offsetprint.jpg';
 import imgHero4 from '../assets/images/vinylprint.jpg';
 import imgHero5 from '../assets/images/penaflexprinting.jpg';
 import imgHero6 from '../assets/images/expostall.jpg';
 
 // 2. Features Slider
-import imgFeature1 from '../assets/images/newImages/IMG-20260822-WA0176.jpg';
-import imgFeature2 from '../assets/images/newImages/IMG-20260822-WA0177.jpg';
-import imgFeature3 from '../assets/images/newImages/IMG-20260822-WA0178.jpg';
-import imgFeature4 from '../assets/images/newImages/IMG-20260822-WA0179.jpg';
-import imgFeature5 from '../assets/images/newImages/IMG-20260822-WA0180.jpg';
-import imgFeature6 from '../assets/images/newImages/IMG-20260822-WA0181.jpg';
-import imgFeature7 from '../assets/images/newImages/IMG-20260822-WA0182.jpg';
-import imgFeature8 from '../assets/images/newImages/IMG-20260822-WA0183.jpg';
-import imgFeature9 from '../assets/images/newImages/IMG-20260822-WA0184.jpg';
-import imgFeature10 from '../assets/images/newImages/IMG-20260822-WA0185.jpg';
-import imgFeature11 from '../assets/images/newImages/IMG-20260822-WA0028.jpg';
-import imgFeature12 from '../assets/images/newImages/IMG-20260822-WA0029.jpg';
-import imgFeature13 from '../assets/images/newImages/IMG-20260822-WA0030.jpg';
-import imgFeature14 from '../assets/images/newImages/IMG-20260822-WA0031.jpg';
-import imgFeature15 from '../assets/images/newImages/IMG-20260822-WA0032.jpg';
-
+import imgFeature1 from '../assets/images/counpon.jpg';
+import imgFeature2 from '../assets/images/50off.jpg';
+import imgFeature3 from '../assets/images/thecalender.jpg';
+import imgFeature4 from '../assets/images/canvaasprint.jpg';
+import imgFeature5 from '../assets/images/kisoktables.jpg';
+import imgFeature6 from '../assets/images/packingbox.jpg';
+import imgFeature7 from '../assets/images/papersbags.jpg';
+import imgFeature8 from '../assets/images/penaprinturdu.jpg';
+import imgFeature9 from '../assets/images/urdu2.jpg';
+import imgFeature10 from '../assets/images/urdu3.jpg';
+import imgFeature11 from '../assets/images/vinylabout.jpg';
+import imgFeature12 from '../assets/images/standeee.jpg';
+import imgFeature13 from '../assets/images/xstandee.jpg';
+import imgFeature14 from '../assets/images/expoabout.jpg';
+import imgFeature15 from '../assets/images/brofly.jpg';
 
 // 3. Products Cards 
 import imgBusinessCard from '../assets/images/BusinessCard.jpg';
 import imgCalender from '../assets/images/calender.jpg';
 import imgCardBox from '../assets/images/BoxPacking.jpg'; 
 import imgBoxMaker from '../assets/images/box.jpg'; 
-import imgXstandPrint from '../assets/images/bannerprint.jpg';
-import imgRollup from '../assets/images/rollup.jpg';
-import img3dSignage from '../assets/images/3dsignage.jpg';
+import imgxstand from '../assets/images/xstand.jpg'; 
+import imgRollup from '../assets/images/rollupstand.jpg';
+import imgBackdrop from '../assets/images/Backdrop.jpg';
+import imgsignageworks from '../assets/images/signageworks.jpg';
 import imgVehicleWrapping from '../assets/images/vehiclewrapping.jpg';
 
 // Logo import
@@ -65,17 +64,16 @@ function Home({ setCurrentPage }) {
     { title: "X-Stand & Roll-Up Stand", desc: "Dynamic display options designed for maximum brand visibility during corporate promotions and product launches.", img: imgFeature13 },
     { title: "Expo Stall Branding", desc: "Complete trade show display design, backdrop setup, and custom booth fabrication solutions for events.", img: imgFeature14 },
     { title: "Brochure, Flyer & Catalog Printing", desc: "High-impact marketing materials including folded brochures, product catalogs, and promotional flyers.", img: imgFeature15 },
-
   ];
 
-  const heroBannerImages = [imgHero1, imgHero2, imgHero3, imgHero4, imgHero5, imgHero6];
+  const heroBannerImages = [imgHero1, imgHero3, imgHero4, imgHero5, imgHero6];
   const [currentHeroIndex, setCurrentHeroIndex] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const heroInterval = setInterval(() => {
       setCurrentHeroIndex((prevIndex) => (prevIndex + 1) % heroBannerImages.length);
-    }, 3000);
+    }, 3500);
     return () => clearInterval(heroInterval);
   }, [heroBannerImages.length]);
 
@@ -94,17 +92,18 @@ function Home({ setCurrentPage }) {
   ];
   
   const offsetProducts = [
-    { title: "Standard Business Cards", desc: "Matt / Gloss Lamination", price: "Rs 3,500.00", img: imgBusinessCard },
-    { title: "Corporate Calendars", desc: "Custom Wall & Desk Calendars", price: "Rs 4,500.00", img: imgCalender },
-    { title: "Card Box Packaging", desc: "Custom Brand Boxes", price: "Rs 1,500.00", img: imgCardBox },
-    { title: "Custom Box Maker", desc: "Die-cut Product Packaging", price: "Rs 400.00", img: imgBoxMaker },
+    { title: "Standard Business Cards", desc: "Matt / Gloss Lamination", price: "Rs 20.00 -Each", img: imgBusinessCard },
+    { title: "Corporate Calendars", desc: "Custom Wall & Desk Calendars", price: "Rs 475.00 -Each Calender", img: imgCalender },
+    { title: "Card Box Packaging", desc: "Custom Brand Boxes", price: "Rs 250.00 -Each", img: imgCardBox },
+    { title: "Custom Box Maker", desc: "Die-cut Product Packaging", price: "Rs 175.00 -Each box", img: imgBoxMaker },
   ];
 
   const largeFormatProducts = [
-    { title: "X-Standee Printing", desc: "Indoor Portable Banner", price: "Rs 3,500.00", img: imgXstandPrint },
-    { title: "Rollup Standee", desc: "Aluminum Heavy Duty", price: "Rs 5,500.00", img: imgRollup },
-    { title: "3D Signage Board", desc: "Shop Front Glow Banner", price: "Rs 1,200.00", img: img3dSignage },
-    { title: "Vehicle Wrapping", desc: "Full Car & Van Branding", price: "Rs 15,000.00", img: imgVehicleWrapping },
+    { title: "X-Stand", desc: "Indoor Portable Banner", price: "Rs 3,500.00", img: imgxstand },
+    { title: "Rollup Standee", desc: "Aluminum Heavy Duty", price: "Rs 7,500.00", img: imgRollup },
+    { title: "Back drop Penalex with frame", desc: "Premium Exhibition Stand", price: "Rs 25,000.00", img: imgBackdrop },
+    { title: " Signage Work", desc: "Shop Front Glow Banner", price: "Rs 5500.00 -Each", img: imgsignageworks },
+    { title: "Vehicle Wrapping", desc: "Full Car & Van Branding", price: "Rs 35000.00 -Each Vehicle", img: imgVehicleWrapping },
   ];
 
   if (loading) {
@@ -233,33 +232,45 @@ function Home({ setCurrentPage }) {
         .feature-animated-box {
           animation: smoothFadeSlide 0.8s ease-in-out forwards;
         }
-
-        .hero-slider-banner {
-          width: 100%;
-          max-width: 1250px;
-          height: 420px;
-          margin: 0 auto;
-          border-radius: 16px;
-          background-size: 100% 100% !important;
-          background-position: center center !important;
-          background-repeat: no-repeat !important;
-          border: 2px solid rgba(184, 0, 255, 0.3);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-        }
-        @media (max-width: 768px) {
-          .hero-slider-banner { height: 220px; border-radius: 8px; }
-        }
       `}</style>
 
       {/* Hero Banner Slider */}
-      <div className="container px-3 my-4 d-flex justify-content-center align-items-center">
+      <div className="container-fluid px-0 my-3 position-relative overflow-hidden">
         <div 
-          className="hero-slider-banner"
-          style={{
-            backgroundImage: `url(${heroBannerImages[currentHeroIndex]})`,
-            transition: 'background-image 1s ease-in-out',
+          style={{ 
+            width: '100%', 
+            height: '450px', 
+            position: 'relative', 
+            overflow: 'hidden', 
+            backgroundColor: '#0c0718'
           }}
-        ></div>
+        >
+          {heroBannerImages.map((img, idx) => (
+            <div 
+              key={idx} 
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+                opacity: idx === currentHeroIndex ? 1 : 0,
+                transition: 'opacity 1.2s ease-in-out',
+                zIndex: idx === currentHeroIndex ? 2 : 1
+              }}
+            >
+              <img 
+                src={img} 
+                alt={`Banner ${idx + 1}`} 
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'fill'
+                }}
+              />
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Pakistan Section */}
@@ -271,7 +282,7 @@ function Home({ setCurrentPage }) {
         </div>
 
         <h1 className="display-5 fw-bold mb-3 px-2" style={{ color: '#ffffff', textShadow: '0 3px 15px rgba(184, 0, 255, 0.8)' }}>
-          Pakistan's Online Panaflex Printing & Offset Printing
+          Pakistan's 1st Online Panaflex Printing & Offset Printing
         </h1>
         <p className="fs-5 fw-bold mb-4" style={{ color: '#ffcc00', textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)' }}>
           Khurram Advertising Services
@@ -363,9 +374,9 @@ function Home({ setCurrentPage }) {
       <section className="mb-5">
         <div className="hashmi-custom-banner">Large Format Products</div>
         <div className="container">
-          <div className="row g-4">
+          <div className="row g-4 justify-content-center">
             {largeFormatProducts.map((p, idx) => (
-              <div className="col-md-6 col-lg-3" key={idx}>
+              <div className="col-md-6 col-lg-4" key={idx}>
                 <div className="glow-card p-3 h-100 d-flex flex-column text-center shadow-sm">
                   <div className="card-img-container mb-3">
                     <img src={p.img} alt={p.title} />
@@ -373,8 +384,8 @@ function Home({ setCurrentPage }) {
                   <h6 className="fw-bold mb-1" style={{ color: '#ffffff' }}>{p.title}</h6>
                   <span className="extra-small mb-2" style={{ color: '#94a3b8' }}>{p.desc}</span>
                   <div className="fw-bold mb-3 mt-auto" style={{ color: '#ffcc00' }}>{p.price}</div>
-                  <a href={`https://wa.me/923212102553?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(p.title)}`} target="_blank" rel="noreferrer" className="btn btn-glow-accent btn-sm rounded-pill w-100 text-decoration-none">
-                    Buy Now
+                  <a href={`https://wa.me/923212102553?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(p.title)}`} target="_blank" rel="noreferrer" className="btn btn-glow-accent btn-sm rounded-pill w-100 text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                    <i className="bi bi-whatsapp fs-6"></i> Buy Now
                   </a>
                 </div>
               </div>
@@ -387,7 +398,7 @@ function Home({ setCurrentPage }) {
       <section className="mb-5">
         <div className="hashmi-custom-banner">Offset & Corporate Printing</div>
         <div className="container">
-          <div className="row g-4">
+          <div className="row g-4 justify-content-center">
             {offsetProducts.map((p, idx) => (
               <div className="col-md-6 col-lg-3" key={idx}>
                 <div className="glow-card p-3 h-100 d-flex flex-column text-center shadow-sm">
@@ -397,8 +408,8 @@ function Home({ setCurrentPage }) {
                   <h6 className="fw-bold mb-1" style={{ color: '#ffffff' }}>{p.title}</h6>
                   <span className="extra-small mb-2" style={{ color: '#94a3b8' }}>{p.desc}</span>
                   <div className="fw-bold mb-3 mt-auto" style={{ color: '#ffcc00' }}>{p.price}</div>
-                  <a href={`https://wa.me/923212102553?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(p.title)}`} target="_blank" rel="noreferrer" className="btn btn-glow-accent btn-sm rounded-pill w-100 text-decoration-none">
-                    Buy Now
+                  <a href={`https://wa.me/923212102553?text=Hi,%20I%20want%20to%20order%20${encodeURIComponent(p.title)}`} target="_blank" rel="noreferrer" className="btn btn-glow-accent btn-sm rounded-pill w-100 text-decoration-none d-flex align-items-center justify-content-center gap-2">
+                    <i className="bi bi-whatsapp fs-6"></i> Buy Now
                   </a>
                 </div>
               </div>
@@ -411,7 +422,7 @@ function Home({ setCurrentPage }) {
       <section className="mb-5">
         <div className="hashmi-custom-banner">Client Reviews & Testimonials</div>
         <div className="container">
-          <div className="row g-4">
+          <div className="row g-4 justify-content-center">
             {reviews.map((r, idx) => (
               <div className="col-md-6 col-lg-3" key={idx}>
                 <div className="glow-card p-4 h-100 d-flex flex-column shadow-sm">
