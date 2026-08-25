@@ -49,7 +49,7 @@ function VinylPrinting() {
     {
       id: 5,
       title: "vinyl sticker expo stall branding",
-      price: "Rs 2,500.00 onwards",
+      price: "Rs 40,000.00 ",
       img: rollupstandImg,
       desc: "Portable, Lightweight & Perfect for Events & Exhibitions."
     },

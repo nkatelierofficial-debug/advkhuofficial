@@ -17,7 +17,7 @@ import labelStickerImg from '../assets/images/LabelSticker.jpg';
 import wovenLabelImg from '../assets/images/WovenLabel.jpg';
 import satinLabelImg from '../assets/images/SatinLabel.jpg';
 import hangTagImg from '../assets/images/HangTag.jpg';
-import productStickerImg from '../assets/images/productSticker.jpg';
+import productStickerImg from '../assets/images/ProductSticker.jpg';
 import packingTapeImg from '../assets/images/PackingTape.jpg';
 import notepadPadImg from '../assets/images/NotepadPad.jpg';
 
