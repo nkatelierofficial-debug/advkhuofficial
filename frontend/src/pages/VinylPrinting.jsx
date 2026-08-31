@@ -8,7 +8,7 @@ import canvasprintsImg from '../assets/images/canvasprints.jpg';
 import vinylstickerImg from '../assets/images/vinylsticker.jpg';
 import onewayvisionImg from '../assets/images/onewayvision.jpg';
 import outdoorvinylImg from '../assets/images/outdoorvinyl.jpg';
-import rollupstandImg from '../assets/images/rollupstand.jpg';
+import vinylstickerexpostallbrandingImg from '../assets/images/vinylstickerexpostallbranding.jpg';
 import polestreetImg from '../assets/images/polestreet.jpg';
 import vehiclebrandingImg from '../assets/images/vehiclebranding.jpg';
 import backdropeventImg from '../assets/images/backdropevent.jpg';
@@ -50,7 +50,7 @@ function VinylPrinting() {
       id: 5,
       title: "vinyl sticker expo stall branding",
       price: "Rs 40,000.00 ",
-      img: rollupstandImg,
+      img: vinylstickerexpostallbrandingImg,
       desc: "Portable, Lightweight & Perfect for Events & Exhibitions."
     },
     {

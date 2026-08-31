@@ -219,7 +219,7 @@ function OffsetPrinting() {
       </section>
 
       <div className="container py-4">
-        {/* Feature Section matching screenshot design */}
+        {/* Feature Section */}
         <section className="hero-feature-card p-4 p-md-5 mb-5 text-center">
           <div className="mb-3">
             <span className="pill-badge">
@@ -237,7 +237,7 @@ function OffsetPrinting() {
 
           <div className="row g-3 text-start mt-2">
             <div className="col-md-4">
-              <div className="feature-sub-card p-3.5 p-3 h-100">
+              <div className="feature-sub-card p-3 h-100">
                 <h6 className="fw-bold d-flex align-items-center mb-2" style={{ color: '#ffcc00', fontSize: '1.1rem' }}>
                   <i className="bi bi-shield-check me-2 fs-5"></i> High-GSM Quality Paper
                 </h6>
@@ -248,7 +248,7 @@ function OffsetPrinting() {
             </div>
 
             <div className="col-md-4">
-              <div className="feature-sub-card p-3.5 p-3 h-100">
+              <div className="feature-sub-card p-3 h-100">
                 <h6 className="fw-bold d-flex align-items-center mb-2" style={{ color: '#ffcc00', fontSize: '1.1rem' }}>
                   <i className="bi bi-palette me-2 fs-5"></i> Sharp CMYK Precision
                 </h6>
@@ -259,7 +259,7 @@ function OffsetPrinting() {
             </div>
 
             <div className="col-md-4">
-              <div className="feature-sub-card p-3.5 p-3 h-100">
+              <div className="feature-sub-card p-3 h-100">
                 <h6 className="fw-bold d-flex align-items-center mb-2" style={{ color: '#ffcc00', fontSize: '1.1rem' }}>
                   <i className="bi bi-scissors me-2 fs-5"></i> Custom Finishing & Coating
                 </h6>
@@ -280,16 +280,17 @@ function OffsetPrinting() {
           </p>
         </div>
 
-        {/* Product Grid */}
+        {/* Product Grid - 3 Cards per row with uncropped images */}
         <div className="row g-4">
           {products.map((item) => (
-            <div className="col-md-6 col-lg-3" key={item.id}>
+            <div className="col-md-6 col-lg-4" key={item.id}>
               <div className="glow-card h-100 p-3 text-center d-flex flex-column shadow-sm">
-                <div className="position-relative overflow-hidden rounded-3 mb-3" style={{ height: '180px' }}>
+                <div className="position-relative overflow-hidden rounded-3 mb-3 d-flex align-items-center justify-content-center" style={{ height: '210px', backgroundColor: '#0a0514' }}>
                   <img
                     src={item.img}
                     alt={item.title}
-                    className="w-100 h-100 object-fit-cover"
+                    className="w-100 h-100"
+                    style={{ objectFit: 'contain' }}
                   />
                 </div>
                 <h5 className="fw-bold text-white mb-1">{item.title}</h5>

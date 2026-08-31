@@ -90,10 +90,13 @@ function App() {
       <nav className="navbar navbar-expand-lg sticky-top py-3 shadow-lg" style={{ background: '#0d071a', borderBottom: '1px solid rgba(184, 0, 255, 0.2)' }}>
         <div className="container-fluid px-4">
           
-          {/* Brand/Logo for mobile view alignment */}
-          <span className="navbar-brand d-lg-none central-brand-title text-start p-0 m-0" onClick={() => setCurrentPage('home')}>
-            <span className="brand-blue-text">24Hour</span>
-            <span className="brand-gradient-text ms-1">online Printing Services In Karachi</span>
+          {/* Brand/Logo for mobile view alignment (Inner spans removed for clean solid white color) */}
+          <span 
+            className="navbar-brand d-lg-none central-brand-title text-start p-0 m-0" 
+            style={{ color: '#ffffff' }} 
+            onClick={() => setCurrentPage('home')}
+          >
+            24Hour online Printing Services In Karachi
           </span>
 
           {/* Mobile Toggle Button */}
@@ -137,10 +140,8 @@ function App() {
             {/* Center Brand Title (Desktop View) */}
             <div className="text-center my-2 my-lg-0 d-none d-lg-block">
               <span className="central-brand-title" onClick={() => setCurrentPage('home')}>
-                <span className="brand-blue-text">24Hour</span>
-                <span className="brand-gradient-text ms-1">online Printing Services In Karachi</span>
-                <br />
-                <span className="brand-gradient-text ms-1">Just Send For PDF File For Printing </span>
+                 <p>24Hour online Printing Services In</p>
+                <p>Just Send For PDF File For Printing </p>
               </span>
             </div>
 
