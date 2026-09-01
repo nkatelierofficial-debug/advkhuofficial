@@ -3,15 +3,15 @@ import React from 'react';
 // Images import from assets with exact filenames
 import bannerImg from '../assets/images/penaflexprinting.jpg';
 import outdoorPrintImg from '../assets/images/outdoorPrint.jpg';
-import backlitPanaflexImg from '../assets/images/BacklitPanaflexBoardPrinting.jpg';
-import starFlexImg from '../assets/images/StarFlexBanner.jpg';
-import xStandeeImg from '../assets/images/X-StandeePrinting.jpg';
-import rollupImg from '../assets/images/rollup.jpg';
-import restaurantFlexImg from '../assets/images/restaurantflexmenuboards.jpg';
-import reflectivePanaflexImg from '../assets/images/ReflectivePanaflexPrinting.jpg';
-import signage3dImg from '../assets/images/3DAcrylicFlexSignboard.jpg';
-import kioskImg from '../assets/images/KioskStand.jpg';
-import backdropImg from '../assets/images/Backdrop.jpg';
+import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
+import starFlexImg from '../assets/images/StarFlexPrinting.jpg';
+import xstandImg from '../assets/images/xstand.jpg';
+import RollupStandImg from '../assets/images/RollupStand.jpg';
+import restaurantFlexImg from '../assets/images/RestaurantFlexBoards.jpg';
+import reflectivePanaflexImg from '../assets/images/ReflectiveFlexPrinting.jpg';
+import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
+import PromotionTablesImg from '../assets/images/PromotionTables.jpg';
+import EventBackdropsImg from '../assets/images/EventBackdrops.jpg';
 
 function PanaflexPrinting() {
   const whatsappNumber = "923347779297";
@@ -29,7 +29,7 @@ function PanaflexPrinting() {
       id: 2,
       title: "Backlit Panaflex Board Printing",
       price: "Rs 900.00 / sqft",
-      img: backlitPanaflexImg,
+      img: FrontBackLightBoardsImg,
       desc: "High translucent flex designed for illuminated lightboxes & light boards."
     },
     {
@@ -41,16 +41,16 @@ function PanaflexPrinting() {
     },
     {
       id: 4,
-      title: "X-Standee Printing & Frame",
+      title: "X-Stand Printing & Frame",
       price: "Rs 3,500.00",
-      img: xStandeeImg,
+      img: xstandImg, 
       desc: "Lightweight portable X-frame with customized HD flex banner (2x5 ft / 2x6 ft)."
     },
     {
       id: 5,
-      title: "Rollup Standee Banner",
+      title: "Rollup Stand",
       price: "Rs 7,500.00",
-      img: rollupImg,
+      img: RollupStandImg, 
       desc: "Retractable aluminum rollup banner stand with high quality smooth print."
     },
     {
@@ -71,21 +71,21 @@ function PanaflexPrinting() {
       id: 8,
       title: "3D Acrylic & Flex Signboard",
       price: "Rs 2,800.00 / sqft",
-      img: signage3dImg,
+      img: Acrylic3DSignboardsImg, 
       desc: "3D Illuminated letters with Panaflex backdrop for modern shop fronts."
     },
     {
       id: 9,
       title: "Kiosk Stand Printing & Setup",
-      price: "Rs 28,000.00",
-      img: kioskImg,
+      price: "Rs 28,000.00 -Each",
+      img: PromotionTablesImg,
       desc: "Promotional kiosk tables and counters with customized branding wrap."
     },
     {
       id: 10,
       title: "Event Backdrop Flex Banner",
       price: "Rs 750.00 / sqft",
-      img: backdropImg,
+      img: EventBackdropsImg,
       desc: "Large format iron frame backdrop flex printing for press conferences, stages & weddings."
     }
   ];
@@ -137,6 +137,27 @@ function PanaflexPrinting() {
           border-radius: 12px;
           padding: 15px;
           height: 100%;
+        }
+        /* Perfect containment to show full image without cropping */
+        .product-img-container {
+          height: 200px;
+          background: #090414;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          border-radius: 12px;
+          padding: 10px;
+          border: 1px solid rgba(162, 0, 255, 0.1);
+        }
+        .product-img-container img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain; /* Image poori nazar aayegi, cut nahi hogi */
+          transition: transform 0.4s ease;
+        }
+        .custom-dark-card:hover .product-img-container img {
+          transform: scale(1.05);
         }
       `}</style>
 
@@ -204,11 +225,10 @@ function PanaflexPrinting() {
             <div className="col-sm-6 col-md-6 col-lg-3" key={item.id}>
               <div className="custom-dark-card h-100 text-center p-4 d-flex flex-column justify-content-between">
                 <div>
-                  <div className="position-relative overflow-hidden rounded-3 mb-3 shadow-sm" style={{ height: '180px' }}>
+                  <div className="position-relative mb-3 shadow-sm product-img-container">
                     <img
                       src={item.img}
                       alt={item.title}
-                      className="w-100 h-100 object-fit-cover"
                     />
                   </div>
                   <h4 className="fw-bold text-white fs-5 mb-2">{item.title}</h4>

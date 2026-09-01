@@ -79,6 +79,13 @@ function Footer() {
           font-size: 1.5rem;
           box-shadow: 0 4px 10px rgba(24, 119, 242, 0.3);
         }
+        .brand-icon-bubble.twitter {
+          background-color: #000000;
+          color: #ffffff;
+          border-radius: 50%;
+          font-size: 1.2rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
         .brand-icon-bubble.linkedin {
           background-color: #0077b5;
           color: #ffffff;
@@ -274,6 +281,7 @@ function Footer() {
           <div className="d-flex align-items-center gap-3">
             <a href="https://www.youtube.com/@hashmiadvertising" target="_blank" rel="noreferrer" className="brand-icon-bubble youtube" title="YouTube"><i className="bi bi-play-fill ms-1"></i></a>
             <a href="https://web.facebook.com/people/HashmiAdvertising/100064110572527/" target="_blank" rel="noreferrer" className="brand-icon-bubble facebook" title="Facebook"><i className="bi bi-facebook"></i></a>
+            <a href="https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fshare%3Furl%3Dhttps%253A%252F%252Fg.co%252Fkgs%252FgpJh9Da%26text%3DHashmi%2520Advertising%250A0321%25202102553%250A%250A&mode=login" target="_blank" rel="noreferrer" className="brand-icon-bubble twitter" title="Twitter / X"><i className="bi bi-twitter-x"></i></a>
             <a href="https://www.linkedin.com/in/khurram-advertising-3440a353/" target="_blank" rel="noreferrer" className="brand-icon-bubble linkedin" title="LinkedIn"><i className="bi bi-linkedin"></i></a>
             <a href="https://share.google/yUjxddIFUiDMsQe" target="_blank" rel="noreferrer" className="brand-icon-bubble google" title="Google">
               <svg width="24" height="24" viewBox="0 0 24 24">

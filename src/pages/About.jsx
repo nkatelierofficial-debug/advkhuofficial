@@ -8,11 +8,11 @@ import about3Img from "../assets/images/about3.jpg";
 
 // Our Services Images
 import FrontlitFlexPrintingImg from '../assets/images/FrontlitFlexPrinting.jpg';
-import BacklitFlexPrintingImg from '../assets/images/BacklitFlexPrinting.jpg';
+import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
 import StarFlexPrintingImg from '../assets/images/StarFlexPrinting.jpg';
 import ReflectiveFlexPrintingImg from '../assets/images/ReflectiveFlexPrinting.jpg';
-import XStandeesImg from '../assets/images/XStandees.jpg';
-import RollupStandeesImg from '../assets/images/RollupStandees.jpg';
+import xstandImg from '../assets/images/xstand.jpg';
+import RollupStandImg from '../assets/images/RollupStand.jpg';
 import KioskPromotionalCountersImg from '../assets/images/KioskPromotionalCounters.jpg';
 import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
 import EventBackdropsImg from '../assets/images/EventBackdrops.jpg';
@@ -106,14 +106,14 @@ const VideoCard = ({ videoSrc, poster, title }) => {
 
 function About() {
   const clientLogos = [
-    { name: "Pakistan State Oil (PSO)", logo: PSO },
-    { name: "SLM Tires", logo: SLM },
-    { name: "Sanam Marvee", logo: SanamMarvee },
-    { name: "HBL / Allied Bank", logo: Bank },
-    { name: "Sec. of Defence", logo: SecofDefence },
-    { name: "UBL Pakistan", logo: UBLPakistan },
-    { name: "Ghazali Model School", logo: GhazaliModel },
-    { name: "IDEAS 2024", logo: IDEAS2024 },
+    { name: "", logo: PSO },
+    { name: "", logo: SLM },
+    { name: "", logo: SanamMarvee },
+    { name: "", logo: Bank },
+    { name: "", logo: SecofDefence },
+    { name: "", logo: UBLPakistan },
+    { name: "", logo: GhazaliModel },
+    { name: "", logo: IDEAS2024 },
   ];
 
   const portfolioWorks = [
@@ -125,22 +125,22 @@ function About() {
     { title: "Modern Pet Signage", img: modernPetSignage },
     { title: "Business & QR Cards", img: businessQRCards },
     { title: "Charcoal Box Packaging", img: charcoalBoxPackaging },
-    { title: "Restaurant Flex Boards", img: restaurantFlexBoards }
+    { title: "Restaurant Flex Menu Boards", img: restaurantFlexBoards }
   ];
 
   const ourServicesList = [
     {
-      title: "Frontlit Flex Printing",
+      title: "Frontlit Sign Board",
       desc: "Standard outdoor flex printing for billboards, shop boards & event banners.",
       img: FrontlitFlexPrintingImg
     },
     {
-      title: "Backlit Flex Printing",
+      title: "BackLit Boards",
       desc: "High translucent flex designed for backlit lightboxes & glowing signboards.",
-      img: BacklitFlexPrintingImg
+      img: FrontBackLightBoardsImg
     },
     {
-      title: "Star Flex Printing",
+      title: "Star Flex (Heavy Duty)Banner",
       desc: "Premium smooth finish flex with extra durability and vibrant contrast.",
       img: StarFlexPrintingImg
     },
@@ -150,14 +150,14 @@ function About() {
       img: ReflectiveFlexPrintingImg
     },
     {
-      title: "X-Standees",
+      title: "X-Stand",
       desc: "Lightweight and portable X-frame standees with customized flex banners.",
-      img: XStandeesImg
+      img: xstandImg
     },
     {
-      title: "Rollup Standees",
+      title: "Rollup Stand",
       desc: "Retractable aluminum base rollup standees for quick indoor display setups.",
-      img: RollupStandeesImg
+      img: RollupStandImg
     },
     {
       title: "Kiosk & Promotional Counters",
@@ -170,7 +170,7 @@ function About() {
       img: Acrylic3DSignboardsImg
     },
     {
-      title: "Event Backdrops",
+      title: "Event Backdrops Flex Banner",
       desc: "Large-format iron frame backdrop setups for stages, weddings, and corporate events.",
       img: EventBackdropsImg
     }
@@ -318,7 +318,7 @@ function About() {
         {/* Main Brand Hero Card */}
         <div className="glow-card text-center p-4 p-md-5 shadow-lg mb-5">
           <h2 className="fst-italic fw-normal mb-2" style={{ color: '#ffcc00' }}>If you can Dream it, We can Print it.</h2>
-          <h1 className="display-4 fw-bold mb-4" style={{ fontFamily: 'Lobster Two, cursive', color: '#ffffff' }}>Khurram Advertising</h1>
+          <h1 className="display-4 fw-bold mb-4" style={{ fontFamily: 'sanssarif, cursive', color: '#ffffff' }}>Khurram Advertising</h1>
 
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <a href="https://wa.me/923212102553" target="_blank" rel="noreferrer" className="btn btn-whatsapp-green rounded-pill px-4 py-2 text-decoration-none shadow-sm">

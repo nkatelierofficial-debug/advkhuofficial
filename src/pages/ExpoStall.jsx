@@ -3,12 +3,12 @@ import React from 'react';
 // Main Banner Image import with exact path
 import bannerImg from '../assets/images/expostall.jpg';
 
-// Products/Cards ke liye dummy images imports (Aap baad mein apne mutabiq adjust kar lein gi)
+// Products/Cards ke liye dummy images imports
 import stallVinylBrandingImg from '../assets/images/stallVinylBranding.jpg';
 import stallVinylStickerImg from '../assets/images/stallVinylSticker.jpg';
 import stallBannerPrintingImg from '../assets/images/stallBannerPrinting.jpg';
 import stallKioskStandImg from '../assets/images/stallKioskStand.jpg';
-import stallXStandImg from '../assets/images/stallXStand.jpg';
+import xstandImg from '../assets/images/xstand.jpg';
 import stallRollupStandImg from '../assets/images/stallRollupStand.jpg';
 import stallBackdropImg from '../assets/images/stallBackdrop.jpg';
 
@@ -19,50 +19,50 @@ function ExpoStallBranding() {
   const products = [
     {
       id: 1,
-      title: "Expo Stall Vinyl Branding",
+      title: "Expo Stall Branding",
       price: "Custom Quote",
       img: stallVinylBrandingImg,
       desc: "Complete Stall Look That Attracts! Full structure wrapping for maximum exhibition impact."
     },
     {
       id: 2,
-      title: "Expo Stall Vinyl Sticker",
+      title: "Expo Stall Sticker",
       price: "Rs 45.00 / sqft",
       img: stallVinylStickerImg,
       desc: "High Quality Stickers for Every Surface! Perfect finish for counters and walls."
     },
     {
       id: 3,
-      title: " Expo Stall Banner Printing",
-      price: "Rs 40.00 / sqft",
+      title: "Expo Stall Banner Printing",
+      price: "Rs 150.00 / sqft",
       img: stallBannerPrintingImg,
       desc: "Big Impact Banners That Speak! High-resolution heavy-duty banners for expos."
     },
     {
       id: 4,
       title: "Expo Stall Kiosk Stand",
-      price: "Rs 15,000.00 onwards",
+      price: "Rs 25,000.00 ",
       img: stallKioskStandImg,
       desc: "Perfect Kiosks, Perfect Impression! Portable counters designed for brand activation."
     },
     {
       id: 5,
       title: "Expo Stall X Stand",
-      price: "Rs 2,500.00 onwards",
-      img: stallXStandImg,
+      price: "Rs 3,500.00 ",
+      img: xstandImg,
       desc: "Lightweight. Portable. Highly Effective! Easy to setup promotional displays."
     },
     {
       id: 6,
       title: "Expo Stall Rollup Stand",
-      price: "Rs 3,000.00 onwards",
+      price: "Rs 7500.00 ",
       img: stallRollupStandImg,
       desc: "Rollup Your Brand, Rollup Your Success! Retractable stands for professional exhibition presentation."
     },
     {
       id: 7,
-      title: "Expo Stall Backdrop ",
-      price: "Rs 50.00 / sqft",
+      title: "Expo Stall Backdrop",
+      price: "Rs 45,000 / 10 by 8 sqft",
       img: stallBackdropImg,
       desc: "Stunning Backdrops for Lasting Impact! Perfect for corporate events, media walls & stages."
     }
@@ -115,6 +115,27 @@ function ExpoStallBranding() {
           border-radius: 12px;
           padding: 15px;
           height: 100%;
+        }
+        /* Product Image Container to fix image cropping / cutting */
+        .product-img-container {
+          height: 200px;
+          background: #090414;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          border-radius: 12px;
+          padding: 10px;
+          border: 1px solid rgba(162, 0, 255, 0.1);
+        }
+        .product-img-container img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: contain; /* Yeh image ko cut hone se bachayega aur poori dikhayega */
+          transition: transform 0.4s ease;
+        }
+        .custom-dark-card:hover .product-img-container img {
+          transform: scale(1.05);
         }
       `}</style>
 
@@ -172,11 +193,10 @@ function ExpoStallBranding() {
             <div className="col-sm-6 col-md-6 col-lg-3" key={item.id}>
               <div className="custom-dark-card h-100 text-center p-4 d-flex flex-column justify-content-between">
                 <div>
-                  <div className="position-relative overflow-hidden rounded-3 mb-3 shadow-sm" style={{ height: '180px' }}>
+                  <div className="position-relative mb-3 shadow-sm product-img-container">
                     <img
                       src={item.img}
                       alt={item.title}
-                      className="w-100 h-100 object-fit-cover"
                     />
                   </div>
                   <h4 className="fw-bold text-white fs-5 mb-2">{item.title}</h4>

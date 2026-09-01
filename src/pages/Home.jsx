@@ -8,21 +8,21 @@ import imgHero5 from '../assets/images/penaflexprinting.jpg';
 import imgHero6 from '../assets/images/expostall.jpg';
 
 // 2. Features Slider
-import imgFeature1 from '../assets/images/counpon.jpg';
-import imgFeature2 from '../assets/images/50off.jpg';
-import imgFeature3 from '../assets/images/thecalender.jpg';
-import imgFeature4 from '../assets/images/canvaasprint.jpg';
-import imgFeature5 from '../assets/images/kisoktables.jpg';
-import imgFeature6 from '../assets/images/packingbox.jpg';
-import imgFeature7 from '../assets/images/papersbags.jpg';
-import imgFeature8 from '../assets/images/penaprinturdu.jpg';
-import imgFeature9 from '../assets/images/urdu2.jpg';
-import imgFeature10 from '../assets/images/urdu3.jpg';
-import imgFeature11 from '../assets/images/vinylabout.jpg';
-import imgFeature12 from '../assets/images/standeee.jpg';
-import imgFeature13 from '../assets/images/xstandee.jpg';
-import imgFeature14 from '../assets/images/expoabout.jpg';
-import imgFeature15 from '../assets/images/brofly.jpg';
+import imgFeature1 from '../assets/images/TicketsandCouponsprinting.jpg';
+import imgFeature2 from '../assets/images/OpaqueWindowDecals.jpg';
+import imgFeature3 from '../assets/images/TableCalendarPrinting.jpg';
+import imgFeature4 from '../assets/images/canvasprints.jpg';
+import imgFeature5 from '../assets/images/PromotionTables.jpg';
+import imgFeature6 from '../assets/images/BoxPacking.jpg';
+import imgFeature7 from '../assets/images/PaperBag.jpg';
+import imgFeature8 from '../assets/images/FrontBackLightBoards.jpg';
+import imgFeature9 from '../assets/images/BrochuresMenusPrinting.jpg';
+import imgFeature10 from '../assets/images/RollupStand.jpg';
+import imgFeature11 from '../assets/images/VinylStickerPrintingPasting.jpg';
+import imgFeature12 from '../assets/images/StandRollUpDisplay.jpg';
+import imgFeature13 from '../assets/images/XStandRollUpStand.jpg';
+import imgFeature14 from '../assets/images/ExpoStallBranding.jpg';
+import imgFeature15 from '../assets/images/BrochureFlyerCatalogPrinting.jpg';
 
 // 3. Products Cards 
 import imgBusinessCard from '../assets/images/BusinessCard.jpg';
@@ -30,7 +30,7 @@ import imgCalender from '../assets/images/calender.jpg';
 import imgCardBox from '../assets/images/BoxPacking.jpg'; 
 import imgBoxMaker from '../assets/images/box.jpg'; 
 import imgxstand from '../assets/images/xstand.jpg'; 
-import imgRollup from '../assets/images/rollupstand.jpg';
+import imgRollup from '../assets/images/RollupStand.jpg';
 import imgBackdrop from '../assets/images/Backdrop.jpg';
 import imgsignageworks from '../assets/images/signageworks.jpg';
 import imgVehicleWrapping from '../assets/images/vehiclewrapping.jpg';
@@ -50,7 +50,7 @@ function Home({ setCurrentPage }) {
 
   const features = [
     { title: "Tickets and Coupons Printing", desc: "High-quality event tickets, custom raffle coupons, and security-printed entry passes for all occasions.", img: imgFeature1 },
-    { title: "Opaque Window Decals", desc: "Transform your storefront glass windows with eye-catching promotional stickers and 50% off sales displays.", img: imgFeature2 },
+    { title: "Glass Window Vinyl Sticker Pasting", desc: "Transform your storefront glass windows with eye-catching promotional stickers and 50% off sales displays.", img: imgFeature2 },
     { title: "Table Calendar Printing", desc: "Customized corporate and desk calendars featuring high-resolution monthly designs to keep your brand visible year-round.", img: imgFeature3 },
     { title: "Canvas Printing", desc: "Stunning abstract and custom artistic canvas prints with rich gold and vibrant blue texture effects for interior decor.", img: imgFeature4 },
     { title: "Promotion Tables", desc: "Portable promotion counters and sampling desks designed for brand activation, exhibitions, and product launching.", img: imgFeature5 },
@@ -58,9 +58,9 @@ function Home({ setCurrentPage }) {
     { title: "Paper Bags Online Order", desc: "Eco-friendly luxury paper carry bags with custom handles and logos for boutiques, brands, and corporate gifting.", img: imgFeature7 },
     { title: "Front & Back Light Boards", desc: "Professional signage solutions including illuminated flex boards and glowing store fascias to brighten your storefront.", img: imgFeature8 },
     { title: "Brochures & Menus Printing", desc: "All kinds of trifold brochures, hotel menus, and institutional booklets designed to showcase your corporate offerings.", img: imgFeature9 },
-    { title: "Rollup Banner Karachi", desc: "Portable rollup banners and standees ideal for exhibitions, cinema promotions, corporate events, and seminars.", img: imgFeature10 },
+    { title: "Rollup Stand", desc: "Portable rollup banners and stand ideal for exhibitions, cinema promotions, corporate events, and seminars.", img: imgFeature10 },
     { title: "Vinyl Sticker Printing & Pasting", desc: "Premium quality vinyl stickers with clean finish, durable cutting, and professional pasting for stores and vehicles.", img: imgFeature11 },
-    { title: "Standee & Roll-Up Display", desc: "Professional display solutions including portable standees and roll-up stands for events and exhibitions.", img: imgFeature12 },
+    { title: "Stand & Roll-Up Display", desc: "Professional display solutions including portable standees and roll-up stands for events and exhibitions.", img: imgFeature12 },
     { title: "X-Stand & Roll-Up Stand", desc: "Dynamic display options designed for maximum brand visibility during corporate promotions and product launches.", img: imgFeature13 },
     { title: "Expo Stall Branding", desc: "Complete trade show display design, backdrop setup, and custom booth fabrication solutions for events.", img: imgFeature14 },
     { title: "Brochure, Flyer & Catalog Printing", desc: "High-impact marketing materials including folded brochures, product catalogs, and promotional flyers.", img: imgFeature15 },
@@ -100,8 +100,8 @@ function Home({ setCurrentPage }) {
 
   const largeFormatProducts = [
     { title: "X-Stand", desc: "Indoor Portable Banner", price: "Rs 3,500.00", img: imgxstand },
-    { title: "Rollup Standee", desc: "Aluminum Heavy Duty", price: "Rs 7,500.00", img: imgRollup },
-    { title: "Back drop Penalex with frame", desc: "Premium Exhibition Stand", price: "Rs 25,000.00", img: imgBackdrop },
+    { title: "Rollup-Stand", desc: "Aluminum Heavy Duty", price: "Rs 7,500.00", img: imgRollup },
+    { title: "Back drop Penalex", desc: "Premium Exhibition Stand", price: "Rs 25,000.00", img: imgBackdrop },
     { title: " Signage Work", desc: "Shop Front Glow Banner", price: "Rs 5500.00 -Each", img: imgsignageworks },
     { title: "Vehicle Wrapping", desc: "Full Car & Van Branding", price: "Rs 35000.00 -Each Vehicle", img: imgVehicleWrapping },
   ];
@@ -239,7 +239,7 @@ function Home({ setCurrentPage }) {
         <div 
           style={{ 
             width: '100%', 
-            height: '450px', 
+            height: '650px', 
             position: 'relative', 
             overflow: 'hidden', 
             backgroundColor: '#0c0718'
@@ -285,7 +285,7 @@ function Home({ setCurrentPage }) {
           Pakistan's 1st Online Panaflex Printing & Offset Printing
         </h1>
         <p className="fs-5 fw-bold mb-4" style={{ color: '#ffcc00', textShadow: '0 2px 10px rgba(0, 0, 0, 0.9)' }}>
-          Khurram Advertising Services
+        You can reach out to these numbers
         </p>
 
         <div className="d-flex justify-content-center gap-4 flex-wrap mt-3">
