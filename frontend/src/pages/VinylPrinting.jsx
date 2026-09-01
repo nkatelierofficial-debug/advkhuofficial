@@ -42,7 +42,7 @@ function VinylPrinting() {
     {
       id: 4,
       title: "Outdoor Vinyl Sticker ",
-      price: "Rs 110.00 / sqft",
+      price: "Rs 180.00 / sqft",
       img: outdoorvinylImg,
       desc: "Weatherproof Banners for Maximum Visibility and long-lasting outdoor advertising."
     },
@@ -56,21 +56,21 @@ function VinylPrinting() {
     {
       id: 6,
       title: " vinyl Pole & Street Banners",
-      price: "Rs 60.00 / sqft",
+      price: "Rs 160.00 / sqft",
       img: polestreetImg,
       desc: "High Visibility Maximum Exposure street marketing and lamp-post branding."
     },
     {
       id: 7,
       title: " vinyl sticker Car Branding",
-      price: "Rs 120.00 / sqft",
+      price: "Rs 180.00 / sqft",
       img: vehiclebrandingImg,
       desc: "Transform Your Vehicle into a Moving Billboard with cast wrap vinyl."
     },
     {
       id: 9,
       title: " vinyl sticker wall Branding",
-      price: "Rs 50.00 / sqft",
+      price: "Rs 450.00 / sqft",
       img: backdropeventImg,
       desc: "Perfect Backdrops for Corporate Events, Press Conferences & Weddings."
     }

@@ -7,7 +7,7 @@ import satisfactionImg from "../assets/images/customersatisfication.jpg";
 import about3Img from "../assets/images/about3.jpg";
 
 // Our Services Images
-import FrontlitFlexPrintingImg from '../assets/images/FrontlitFlexPrinting.jpg';
+import outdoorPrintImg from '../assets/images/outdoorPrint.jpg';
 import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
 import StarFlexPrintingImg from '../assets/images/StarFlexPrinting.jpg';
 import ReflectiveFlexPrintingImg from '../assets/images/ReflectiveFlexPrinting.jpg';
@@ -132,7 +132,7 @@ function About() {
     {
       title: "Frontlit Sign Board",
       desc: "Standard outdoor flex printing for billboards, shop boards & event banners.",
-      img: FrontlitFlexPrintingImg
+      img: outdoorPrintImg
     },
     {
       title: "BackLit Boards",
