@@ -6,7 +6,7 @@ import outdoorPrintImg from '../assets/images/outdoorPrint.jpg';
 import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
 import starFlexImg from '../assets/images/StarFlexPrinting.jpg';
 import xstandImg from '../assets/images/xstand.jpg';
-import RollupStandImg from '../assets/images/RollupStand.jpg';
+import StandRollUpDisplayImg from '../assets/images/StandRollUpDisplay.jpg';
 import restaurantFlexImg from '../assets/images/RestaurantFlexBoards.jpg';
 import reflectivePanaflexImg from '../assets/images/ReflectiveFlexPrinting.jpg';
 import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
@@ -50,7 +50,7 @@ function PanaflexPrinting() {
       id: 5,
       title: "Rollup Stand",
       price: "Rs 7,500.00",
-      img: RollupStandImg, 
+      img: StandRollUpDisplayImg, 
       desc: "Retractable aluminum rollup banner stand with high quality smooth print."
     },
     {

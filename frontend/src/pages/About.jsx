@@ -12,7 +12,7 @@ import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
 import StarFlexPrintingImg from '../assets/images/StarFlexPrinting.jpg';
 import ReflectiveFlexPrintingImg from '../assets/images/ReflectiveFlexPrinting.jpg';
 import xstandImg from '../assets/images/xstand.jpg';
-import RollupStandImg from '../assets/images/RollupStand.jpg';
+import StandRollUpDisplayImg from '../assets/images/StandRollUpDisplay.jpg';
 import KioskPromotionalCountersImg from '../assets/images/KioskPromotionalCounters.jpg';
 import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
 import EventBackdropsImg from '../assets/images/EventBackdrops.jpg';
@@ -157,7 +157,7 @@ function About() {
     {
       title: "Rollup Stand",
       desc: "Retractable aluminum base rollup standees for quick indoor display setups.",
-      img: RollupStandImg
+      img: StandRollUpDisplayImg
     },
     {
       title: "Kiosk & Promotional Counters",
