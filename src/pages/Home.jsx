@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
-// 1. Hero Banner
 import imgHero1 from '../assets/images/homebanner.jpg';
 import imgHero3 from '../assets/images/offsetprint.jpg';
 import imgHero4 from '../assets/images/vinylprint.jpg';
 import imgHero5 from '../assets/images/penaflexprinting.jpg';
 import imgHero6 from '../assets/images/expostall.jpg';
 
-// 2. Features Slider
 import imgFeature1 from '../assets/images/TicketsandCouponsprinting.jpg';
 import imgFeature2 from '../assets/images/OpaqueWindowDecals.jpg';
 import imgFeature3 from '../assets/images/TableCalendarPrinting.jpg';
@@ -17,25 +14,23 @@ import imgFeature6 from '../assets/images/BoxPacking.jpg';
 import imgFeature7 from '../assets/images/PaperBag.jpg';
 import imgFeature8 from '../assets/images/FrontBackLightBoards.jpg';
 import imgFeature9 from '../assets/images/BrochuresMenusPrinting.jpg';
-import imgFeature10 from '../assets/images/RollupStand.jpg';
+import imgFeature10 from '../assets/images/StandRollUpDisplay.jpg';
 import imgFeature11 from '../assets/images/VinylStickerPrintingPasting.jpg';
 import imgFeature12 from '../assets/images/StandRollUpDisplay.jpg';
 import imgFeature13 from '../assets/images/XStandRollUpStand.jpg';
 import imgFeature14 from '../assets/images/ExpoStallBranding.jpg';
 import imgFeature15 from '../assets/images/BrochureFlyerCatalogPrinting.jpg';
 
-// 3. Products Cards 
 import imgBusinessCard from '../assets/images/BusinessCard.jpg';
 import imgCalender from '../assets/images/calender.jpg';
 import imgCardBox from '../assets/images/BoxPacking.jpg'; 
 import imgBoxMaker from '../assets/images/box.jpg'; 
 import imgxstand from '../assets/images/xstand.jpg'; 
-import imgRollup from '../assets/images/RollupStand.jpg';
+import imgRollup from '../assets/images/StandRollUpDisplay.jpg';
 import imgBackdrop from '../assets/images/Backdrop.jpg';
 import imgsignageworks from '../assets/images/signageworks.jpg';
 import imgVehicleWrapping from '../assets/images/vehiclewrapping.jpg';
 
-// Logo import
 import logoImg from "../assets/logos/logo.jpg";
 
 function Home({ setCurrentPage }) {
@@ -234,7 +229,6 @@ function Home({ setCurrentPage }) {
         }
       `}</style>
 
-      {/* Hero Banner Slider */}
       <div className="container-fluid px-0 my-3 position-relative overflow-hidden">
         <div 
           style={{ 
@@ -273,7 +267,6 @@ function Home({ setCurrentPage }) {
         </div>
       </div>
 
-      {/* Pakistan Section */}
       <section className="container text-center mb-5 py-3">
         <div className="d-flex justify-content-center mb-4">
           <div style={{ width: '180px', height: '180px', borderRadius: '50%', background: '#ffffff', padding: '8px', boxShadow: '0 0 35px rgba(184, 0, 255, 0.85)', border: '3px solid #ff2a85', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
@@ -298,7 +291,6 @@ function Home({ setCurrentPage }) {
         </div>
       </section>
 
-      {/* Dynamic Feature Slider */}
       <section className="container mb-5 py-4">
         <div className="row align-items-center g-5 feature-animated-box" key={currentIndex}>
           <div className="col-lg-6">
@@ -352,8 +344,6 @@ function Home({ setCurrentPage }) {
             </div>
           </div>
         </div>
-
-        {/* Quick Navigation Buttons */}
         <div className="row g-3 mt-4 justify-content-center">
           <div className="col-6 col-md-3">
             <button onClick={() => setCurrentPage('offset')} className="btn btn-glowing-theme rounded-pill w-100 py-3 fw-bold shadow">Offset Print</button>
@@ -369,8 +359,6 @@ function Home({ setCurrentPage }) {
           </div>
         </div>
       </section>
-
-      {/* Large Format Products */}
       <section className="mb-5">
         <div className="hashmi-custom-banner">Large Format Products</div>
         <div className="container">
@@ -393,8 +381,6 @@ function Home({ setCurrentPage }) {
           </div>
         </div>
       </section>
-
-      {/* Offset Products */}
       <section className="mb-5">
         <div className="hashmi-custom-banner">Offset & Corporate Printing</div>
         <div className="container">
@@ -417,8 +403,6 @@ function Home({ setCurrentPage }) {
           </div>
         </div>
       </section>
-
-      {/* Client Reviews */}
       <section className="mb-5">
         <div className="hashmi-custom-banner">Client Reviews & Testimonials</div>
         <div className="container">

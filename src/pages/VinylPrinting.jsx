@@ -1,9 +1,5 @@
 import React from 'react';
-
-// Main Banner Image import with exact path
 import bannerImg from '../assets/images/vinylprint.jpg';
-
-// Products ke liye images imports 
 import canvasprintsImg from '../assets/images/canvasprints.jpg';
 import vinylstickerImg from '../assets/images/vinylsticker.jpg';
 import onewayvisionImg from '../assets/images/onewayvision.jpg';
@@ -15,8 +11,6 @@ import backdropeventImg from '../assets/images/backdropevent.jpg';
 
 function VinylPrinting() {
   const whatsappNumber = "923347779297";
-
-  // Banner ke mutabiq exact 9 products/cards
   const products = [
     {
       id: 1,
@@ -42,7 +36,7 @@ function VinylPrinting() {
     {
       id: 4,
       title: "Outdoor Vinyl Sticker ",
-      price: "Rs 110.00 / sqft",
+      price: "Rs 180.00 / sqft",
       img: outdoorvinylImg,
       desc: "Weatherproof Banners for Maximum Visibility and long-lasting outdoor advertising."
     },
@@ -56,21 +50,21 @@ function VinylPrinting() {
     {
       id: 6,
       title: " vinyl Pole & Street Banners",
-      price: "Rs 60.00 / sqft",
+      price: "Rs 160.00 / sqft",
       img: polestreetImg,
       desc: "High Visibility Maximum Exposure street marketing and lamp-post branding."
     },
     {
       id: 7,
       title: " vinyl sticker Car Branding",
-      price: "Rs 120.00 / sqft",
+      price: "Rs 180.00 / sqft",
       img: vehiclebrandingImg,
       desc: "Transform Your Vehicle into a Moving Billboard with cast wrap vinyl."
     },
     {
       id: 9,
       title: " vinyl sticker wall Branding",
-      price: "Rs 50.00 / sqft",
+      price: "Rs 450.00 / sqft",
       img: backdropeventImg,
       desc: "Perfect Backdrops for Corporate Events, Press Conferences & Weddings."
     }
@@ -84,7 +78,6 @@ function VinylPrinting() {
   return (
     <div className="canvas-vinyl-page py-5" style={{ background: '#0b051d', minHeight: '100vh', color: '#ffffff' }}>
       
-      {/* Custom Styles */}
       <style>{`
         .custom-dark-card {
           background: #130a2a;
@@ -127,8 +120,6 @@ function VinylPrinting() {
       `}</style>
 
       <div className="container-fluid px-4">
-        
-        {/* 1. PEHLA SECTION: Main Banner Image (vinylprint.jpg) */}
         <div className="banner-container mb-5 p-2">
           <img 
             src={bannerImg} 
@@ -136,8 +127,6 @@ function VinylPrinting() {
             className="w-100 h-auto rounded-3 object-fit-cover" 
           />
         </div>
-
-        {/* 2. DUSRA SECTION: Vinyl & Canvas Detailed Description & Features */}
         <div className="desc-section-box p-4 p-md-5 mb-5 text-center mx-auto" style={{ maxWidth: '1300px' }}>
           <span className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
             Premium Printing Solutions For Every Brand
@@ -168,8 +157,6 @@ function VinylPrinting() {
             </div>
           </div>
         </div>
-
-        {/* 3. TEESRA SECTION: Complete Canvas & Vinyl Products Cards Grid */}
         <div className="text-center mb-4">
           <h2 className="yellow-highlight fw-bold">Canvas & Vinyl Products Collection</h2>
           <p className="text-light opacity-75">Select any product below to order directly via WhatsApp.</p>

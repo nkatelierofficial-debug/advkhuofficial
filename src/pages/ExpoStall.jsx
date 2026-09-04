@@ -1,9 +1,5 @@
 import React from 'react';
-
-// Main Banner Image import with exact path
 import bannerImg from '../assets/images/expostall.jpg';
-
-// Products/Cards ke liye dummy images imports
 import stallVinylBrandingImg from '../assets/images/stallVinylBranding.jpg';
 import stallVinylStickerImg from '../assets/images/stallVinylSticker.jpg';
 import stallBannerPrintingImg from '../assets/images/stallBannerPrinting.jpg';
@@ -14,8 +10,6 @@ import stallBackdropImg from '../assets/images/stallBackdrop.jpg';
 
 function ExpoStallBranding() {
   const whatsappNumber = "923347779297";
-
-  // Expo Stall Branding ke mutabiq exact products/cards ka data
   const products = [
     {
       id: 1,
@@ -27,7 +21,7 @@ function ExpoStallBranding() {
     {
       id: 2,
       title: "Expo Stall Sticker",
-      price: "Rs 45.00 / sqft",
+      price: "Rs 450.00 / sqft",
       img: stallVinylStickerImg,
       desc: "High Quality Stickers for Every Surface! Perfect finish for counters and walls."
     },
@@ -75,8 +69,6 @@ function ExpoStallBranding() {
 
   return (
     <div className="expo-stall-page py-5" style={{ background: '#0b051d', minHeight: '100vh', color: '#ffffff' }}>
-      
-      {/* Custom Styles */}
       <style>{`
         .custom-dark-card {
           background: #130a2a;
@@ -140,8 +132,6 @@ function ExpoStallBranding() {
       `}</style>
 
       <div className="container-fluid px-4">
-        
-        {/* 1. PEHLA SECTION: Main Banner Image (expostall.jpg) */}
         <div className="banner-container mb-5 p-2">
           <img 
             src={bannerImg} 
@@ -149,8 +139,6 @@ function ExpoStallBranding() {
             className="w-100 h-auto rounded-3 object-fit-cover" 
           />
         </div>
-
-        {/* 2. DUSRA SECTION: Expo Stall Detailed Description & Features */}
         <div className="desc-section-box p-4 p-md-5 mb-5 text-center mx-auto" style={{ maxWidth: '1300px' }}>
           <span className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
             Complete Branding Solutions For Your Next Event!
@@ -181,8 +169,6 @@ function ExpoStallBranding() {
             </div>
           </div>
         </div>
-
-        {/* 3. TEESRA SECTION: Complete Expo Stall Products Cards Grid */}
         <div className="text-center mb-4">
           <h2 className="yellow-highlight fw-bold">Expo Stall Products & Solutions</h2>
           <p className="text-light opacity-75">Select any product below to order directly via WhatsApp.</p>

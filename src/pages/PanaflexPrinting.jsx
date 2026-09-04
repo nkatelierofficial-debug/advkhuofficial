@@ -1,12 +1,10 @@
 import React from 'react';
-
-// Images import from assets with exact filenames
 import bannerImg from '../assets/images/penaflexprinting.jpg';
 import outdoorPrintImg from '../assets/images/outdoorPrint.jpg';
 import FrontBackLightBoardsImg from '../assets/images/FrontBackLightBoards.jpg';
 import starFlexImg from '../assets/images/StarFlexPrinting.jpg';
 import xstandImg from '../assets/images/xstand.jpg';
-import RollupStandImg from '../assets/images/RollupStand.jpg';
+import StandRollUpDisplayImg from '../assets/images/StandRollUpDisplay.jpg';
 import restaurantFlexImg from '../assets/images/RestaurantFlexBoards.jpg';
 import reflectivePanaflexImg from '../assets/images/ReflectiveFlexPrinting.jpg';
 import Acrylic3DSignboardsImg from '../assets/images/Acrylic3DSignboards.jpg';
@@ -15,8 +13,6 @@ import EventBackdropsImg from '../assets/images/EventBackdrops.jpg';
 
 function PanaflexPrinting() {
   const whatsappNumber = "923347779297";
-
-  // Panaflex printing category items
   const products = [
     {
       id: 1,
@@ -50,7 +46,7 @@ function PanaflexPrinting() {
       id: 5,
       title: "Rollup Stand",
       price: "Rs 7,500.00",
-      img: RollupStandImg, 
+      img: StandRollUpDisplayImg, 
       desc: "Retractable aluminum rollup banner stand with high quality smooth print."
     },
     {
@@ -98,7 +94,6 @@ function PanaflexPrinting() {
   return (
     <div className="panaflex-page pb-5" style={{ background: '#0b051d', minHeight: '100vh', color: '#ffffff' }}>
       
-      {/* Custom Styles */}
       <style>{`
         .custom-dark-card {
           background: #130a2a;
@@ -160,8 +155,6 @@ function PanaflexPrinting() {
           transform: scale(1.05);
         }
       `}</style>
-
-      {/* 1. PEHLA SECTION: Full Screen Edge-to-Edge Banner Section */}
       <section className="mb-5 position-relative">
         <div 
           className="w-100 position-relative overflow-hidden shadow-lg" 
@@ -181,8 +174,6 @@ function PanaflexPrinting() {
       </section>
 
       <div className="container-fluid px-4">
-        
-        {/* 2. DUSRA SECTION: Panaflex Printing Detailed Text Description & Features */}
         <div className="desc-section-box p-4 p-md-5 mb-5 text-center mx-auto" style={{ maxWidth: '1300px' }}>
           <span className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold mb-3">
             High-Impact Outdoor & Indoor Display Printing
@@ -213,8 +204,6 @@ function PanaflexPrinting() {
             </div>
           </div>
         </div>
-
-        {/* 3. TEESRA SECTION: Complete Panaflex Products Cards */}
         <div className="text-center mb-4">
           <h2 className="yellow-highlight fw-bold">Panaflex & Display Printing Products</h2>
           <p className="text-light opacity-75">Select any product below to order directly via WhatsApp.</p>

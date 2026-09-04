@@ -1,9 +1,6 @@
 import React from 'react';
-
-// Offset Print Banner Image Import
 import offsetPrintBanner from '../assets/images/offsetprint.jpg';
 
-// Individual Product Images Imports
 import brochureImg from '../assets/images/Brochure.jpg';
 import businessCardImg from '../assets/images/BusinessCard.jpg';
 import flyerImg from '../assets/images/Flyer.jpg';
@@ -23,8 +20,6 @@ import notepadPadImg from '../assets/images/NotepadPad.jpg';
 
 function OffsetPrinting() {
   const whatsappNumber = "923212102553";
-
-  // Products mapped with their respective local image imports
   const products = [
     {
       id: 1,
@@ -199,7 +194,6 @@ function OffsetPrinting() {
         }
       `}</style>
 
-      {/* Full Screen Edge-to-Edge Banner Section */}
       <section className="mb-4 position-relative">
         <div 
           className="w-100 position-relative overflow-hidden shadow-lg" 
@@ -219,7 +213,7 @@ function OffsetPrinting() {
       </section>
 
       <div className="container py-4">
-        {/* Feature Section */}
+
         <section className="hero-feature-card p-4 p-md-5 mb-5 text-center">
           <div className="mb-3">
             <span className="pill-badge">
@@ -280,7 +274,6 @@ function OffsetPrinting() {
           </p>
         </div>
 
-        {/* Product Grid - 3 Cards per row with uncropped images */}
         <div className="row g-4">
           {products.map((item) => (
             <div className="col-md-6 col-lg-4" key={item.id}>

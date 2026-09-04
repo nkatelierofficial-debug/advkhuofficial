@@ -31,7 +31,6 @@ function App() {
 
   return (
     <div style={{ background: '#090514', minHeight: '100vh', color: '#f8fafc' }}>
-      {/* Custom Styles for Navbar Layout & Glowing Buttons */}
       <style>{`
         /* Central Brand Title Styling */
         .central-brand-title {
@@ -85,12 +84,8 @@ function App() {
           color: white;
         }
       `}</style>
-
-      {/* Clean Professional Sticky Dark Theme Navbar */}
       <nav className="navbar navbar-expand-lg sticky-top py-3 shadow-lg" style={{ background: '#0d071a', borderBottom: '1px solid rgba(184, 0, 255, 0.2)' }}>
         <div className="container-fluid px-4">
-          
-          {/* Brand/Logo for mobile view alignment (Inner spans removed for clean solid white color) */}
           <span 
             className="navbar-brand d-lg-none central-brand-title text-start p-0 m-0" 
             style={{ color: '#ffffff' }} 
@@ -98,8 +93,6 @@ function App() {
           >
             24Hour online Printing Services In Karachi
           </span>
-
-          {/* Mobile Toggle Button */}
           <button 
             className="navbar-toggler border-0 bg-transparent text-white ms-auto shadow-none" 
             type="button" 
@@ -111,11 +104,8 @@ function App() {
           >
             <i className="bi bi-list fs-1" style={{ color: '#ff2a85' }}></i>
           </button>
-
-          {/* Navigation Container */}
           <div className="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarNav">
-            
-            {/* Left 3 Links */}
+
             <div className="navbar-nav gap-2 align-items-lg-center mb-3 mb-lg-0 mt-3 mt-lg-0">
               <button 
                 className={`btn btn-glow-accent ${currentPage === 'home' ? 'active' : ''}`} 
@@ -136,16 +126,12 @@ function App() {
                 Offset Printing
               </button>
             </div>
-
-            {/* Center Brand Title (Desktop View) */}
             <div className="text-center my-2 my-lg-0 d-none d-lg-block">
               <span className="central-brand-title" onClick={() => setCurrentPage('home')}>
                  <p>24Hour online Printing Services In</p>
                 <p>Just Send For PDF File For Printing </p>
               </span>
             </div>
-
-            {/* Right 3 Links */}
             <div className="navbar-nav gap-2 align-items-lg-center justify-content-end mb-2 mb-lg-0">
               <button 
                 className={`btn btn-glow-accent ${currentPage === 'panaflex' ? 'active' : ''}`} 
@@ -170,14 +156,8 @@ function App() {
           </div>
         </div>
       </nav>
-
-      {/* Dynamic Main Body Content */}
       <main>{renderPage()}</main>
-
-      {/* External Footer Component */}
       <Footer />
-
-      {/* Floating Action WhatsApp Buttons */}
       <div className="position-fixed bottom-0 start-0 p-3" style={{ zIndex: 1050 }}>
         <a 
           href="https://wa.me/923212102553" 

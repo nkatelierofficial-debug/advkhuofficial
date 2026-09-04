@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-// Import your single logo file
 import logoImg from '../assets/logos/logo file.jpg';
-
-// 1. Logo for Dark Section (Clean, natural aspect ratio, no ugly box)
 const DarkSectionLogo = () => (
   <div className="d-inline-block">
     <img 
@@ -13,8 +10,6 @@ const DarkSectionLogo = () => (
     />
   </div>
 );
-
-// 2. Logo for Light Section (Updated to be larger like the dark section logo)
 const LightSectionLogo = () => (
   <div className="d-inline-block">
     <img 
@@ -49,8 +44,6 @@ function Footer() {
 
   return (
     <footer className="footer-wrapper">
-      
-      {/* Embedded CSS Styles */}
       <style>{`
         .brand-icon-bubble {
           width: 44px;
@@ -204,8 +197,6 @@ function Footer() {
           transform: translateY(-4px);
         }
       `}</style>
-
-      {/* 1. DARK CONTACT & INQUIRY FORM SECTION */}
       <div className="bg-black text-white pt-0 pb-5 px-3 px-md-5 position-relative">
         <div className="container-fluid">
           
@@ -273,8 +264,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* 2. SOCIAL ICONS SECTION */}
       <div className="bg-light py-4 px-3 px-md-5 border-bottom border-top">
         <div className="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
           <span className="text-dark fw-bold fs-6">Get connected with us on social networks:</span>
@@ -296,8 +285,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* 3. LIGHT MAIN FOOTER */}
       <div className="bg-light text-dark py-5 px-3 px-md-5">
         <div className="container-fluid">
           <div className="row g-4">
@@ -355,8 +342,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
-      {/* 4. COPYRIGHT BAR */}
       <div className="bg-secondary bg-opacity-10 py-3 text-center border-top">
         <small className="custom-yellow-heading fw-medium">
           © {new Date().getFullYear()} <strong>Khurram Advertising</strong>. All rights reserved. | Developed by <strong>Khan DevLabs</strong>
